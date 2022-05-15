@@ -1,18 +1,7 @@
-# <a href="https://www.linkedin.com/in/siddheshnan/"> Hi There! I'm Siddhesh Nandurkar</a>  <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px">
 
+## <a href="https://www.linkedin.com/in/siddheshnan/">Hi There! I'm Siddhesh</a> <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px">
 
-Full Stack Developer | Computer Vision & IoT Enthusiast | DevOps | Cloud Computing <br/>
-
-<!-- <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif"/>
-Learning Data Science & Machine Learning
-<br/> -->
-<br/>
-
-
-
-
-
-### Hi there, I'm Siddhesh 👋
+### Full Stack Developer | Computer Vision & IoT Enthusiast | DevOps | Cloud Computing
 
 - 🔭 I’m Full Stack Developer & Student at Sipna COET ...
 - 🌱 I’m currently learning Deep Learning & Computer Vision ...
