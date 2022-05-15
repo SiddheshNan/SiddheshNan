@@ -5,13 +5,11 @@
 
 📍 I'm from Amravati, MH, India. I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
 
-🌱 I’m currently learning Deep Learning & Computer Vision 👀
+🌱 I am currently learning Deep Learning & Computer Vision 👀
 
-📫 You can reach me on: Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
+📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan).
 
-
-
-How to reach me:  or Twitter [@SiddheshNan](https://twitter.com/SiddheshNan) ...
+⚡ Read more about my projects at [siddhesh.me](https://siddhesh.me/) 💡
 
 
 
