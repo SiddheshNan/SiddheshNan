@@ -3,7 +3,7 @@
 
 👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Enginner 🎯
 
-📍 I'm from <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> <b>Amravati, MH, India</b>. I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
+📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
 
 🌱 I am currently learning Deep Learning & Computer Vision 👀
 
