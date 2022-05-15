@@ -7,9 +7,11 @@
 
 🌱 I’m currently learning Deep Learning & Computer Vision 👀
 
-📱 You can find me on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
+📫 You can reach me on: Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
 
 
+
+How to reach me:  or Twitter [@SiddheshNan](https://twitter.com/SiddheshNan) ...
 
 
 
@@ -59,9 +61,7 @@
   <img alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
- 
 
-- 📫 How to reach me: hello@siddhesh.me or Twitter [@SiddheshNan](https://twitter.com/SiddheshNan) ...
 
 
 ## &#x1f4c8; GitHub Stats
