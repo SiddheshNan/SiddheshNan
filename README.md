@@ -22,7 +22,7 @@ You can find me on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on T
 <p>
   <img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
   <img alt="NodeJs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-45b8d8?style=flat-square&logo=react&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-45b8d8?style=for-the-badge&logo=react&logoColor=white" />
 </p>
 
  ### 📊 Database 
