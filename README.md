@@ -1,15 +1,15 @@
 
 # Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px"> Nice to meet you :)
 
-👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Engineer 🎯
+#### 👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Engineer 🎯
 
-📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
+#### 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
 
-🌱 I am currently learning Deep Learning & Computer Vision 👀
+#### 🌱 I am currently learning Deep Learning & Computer Vision 👀
 
-📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
+#### 📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
 
-⚡ Read more about my projects at [siddhesh.me](https://siddhesh.me/) 💡
+#### ⚡ Read more about my projects at [siddhesh.me](https://siddhesh.me/) 💡
 
 
 
