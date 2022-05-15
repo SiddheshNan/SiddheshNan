@@ -5,7 +5,12 @@
 
 📍 I'm from Amravati, MH, India. I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
 
-📱 You can find me on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan).
+🌱 I’m currently learning Deep Learning & Computer Vision 👁️
+
+📱 You can find me on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
+
+
+
 
 
 ## 🔧 Technologies & Tools
@@ -16,6 +21,7 @@
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img alt="GoLang" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
 </p>
 
 
@@ -38,6 +44,15 @@
 </p>
 
 
+### ☁ Cloud
+<p>
+  <img alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" />
+  <img alt="DigitalOcean" src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white" />
+  <img alt="Heroku" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+</p>
+
+
 ### ⚙️ Tools
 <p>
   <img alt="Docker" src="https://img.shields.io/badge/Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white" />
@@ -45,7 +60,7 @@
 </p>
 
  
-- 🌱 I’m currently learning Deep Learning & Computer Vision ...
+
 - 📫 How to reach me: hello@siddhesh.me or Twitter [@SiddheshNan](https://twitter.com/SiddheshNan) ...
 
 
