@@ -1,7 +1,7 @@
 
 # Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px"> Nice to meet you :)
 
-👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Enginner 🎯
+👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Engineer 🎯
 
 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
 
