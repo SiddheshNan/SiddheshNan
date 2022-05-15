@@ -29,3 +29,12 @@ Learning Data Science & Machine Learning
 <a href="https://github.com/SiddheshNan">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="SiddheshNan's GitHub Stats" />
 </a>
+
+
+
+<a href="https://github.com/viveknimbolkar">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&theme=tokyonight&show_icons=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=buefy&layout=compact" />
+</a>
+
+
