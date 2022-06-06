@@ -1,5 +1,5 @@
 
-# Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px" style="display:block;width:30px;"> Nice to meet you :)
+# Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/wave.gif" width="30px" height="30px"  style="height:30px;width:30px;display:block;"> Nice to meet you :)
 
 #### 👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Engineer 🎯
 
