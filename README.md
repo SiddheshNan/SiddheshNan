@@ -65,6 +65,6 @@
 ## &#x1f4c8; GitHub Stats
 <a href="https://github.com/SiddheshNan">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&theme=tokyonight&show_icons=true" />
-  <img height="180em" style="margin-left:30px;display:block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=buefy&layout=compact&hide=html,css,asl,php" />
+  <img height="180em" style="margin-left:30px;display:block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=buefy&layout=compact&hide=html,css,asl,php,scss" />
 </a>
 
