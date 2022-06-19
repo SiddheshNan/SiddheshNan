@@ -9,8 +9,8 @@
 
 #### 📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
 
+<!-- INTRO_END -->
 #### ⚡ Read more about my projects at [siddhesh.me](https://siddhesh.me/) 💡
-
 
 
 ## 🔧 Technologies & Tools
