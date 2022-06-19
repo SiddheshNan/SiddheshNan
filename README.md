@@ -65,6 +65,12 @@
 ## &#x1f4c8; GitHub Stats
 <a href="https://github.com/SiddheshNan">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&theme=tokyonight&show_icons=true" />
-  <img height="180em" style="margin-left:30px;display:block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=buefy&layout=compact&hide=html,css,asl,php,scss" />
+  <img height="180em" style="margin-left:30px;display:block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=tokyonight&layout=compact&hide=html,css,asl,php,scss" />
+  
+  
+  <div align="center">
+  <img height="180em" style="max-width:100%;" src="https://github-readme-streak-stats.herokuapp.com?user=siddheshnan&theme=tokyonight">
+</div>
+  
 </a>
 
