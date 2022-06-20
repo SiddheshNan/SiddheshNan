@@ -14,7 +14,11 @@ const skills = [
   {
     name: "Web Development",
     row1: ["NodeJS", "GoLang:<br/>Gin & Mux", "React & React Native"],
-    row2: ["Flask <br/>& FastAPI", "HTML5, CSS3, JS", "Tailwind CSS & Bootstrap"],
+    row2: [
+      "Flask <br/>& FastAPI",
+      "HTML5, CSS3, JS",
+      "Tailwind CSS & Bootstrap",
+    ],
   },
 
   {
@@ -170,18 +174,6 @@ themeButton.addEventListener("click", () => {
   renderRecaptchaCallback();
 });
 
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 1500,
-  delay: 400,
-  // reset: true
-});
-
-sr.reveal(`.home__data`);
-sr.reveal(`.home__handle`, { delay: 700 });
-sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
-
 var renderRecaptchaCallback = function () {
   const recaptcha_parent = document.getElementById("recaptcha_parent");
   recaptcha_parent.innerHTML = "";
@@ -238,9 +230,23 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 });
 
 const showPage = () => {
-  AOS.init();
   document.body.style.zoom = "102%";
+
   document.getElementById("loader-container").style.display = "none";
+
+  const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 1500,
+    delay: 400,
+    // reset: true
+  });
+
+  sr.reveal(`.home__data`);
+  sr.reveal(`.home__handle`, { delay: 700 });
+  sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
+
+  AOS.init();
 };
 
 function parseMarkdown(markdownText) {
