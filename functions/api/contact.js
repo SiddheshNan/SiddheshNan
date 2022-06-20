@@ -22,21 +22,18 @@ export async function onRequestGet(request) {
 
 export async function onRequestPost(request) {
   try {
-    const RecaptchaSecret = await request.env.SIDDHESH_ME.get(
-      "GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY"
-    );
-    const SendgridApiKey = await request.env.SIDDHESH_ME.get(
-      "SENDGRID_SIDDHESH_ME_API_KEY"
-    );
-
     const { name, email, msg, gRecaptchaResponse } = await request.json();
 
     if (!name || !email || !msg || !gRecaptchaResponse) {
       return sendResponse({ error: "Input fields are not valid" }, 400);
     }
 
+    const GOOGLE_RECAPTCHA_SECRET_KEY = await request.env.SIDDHESH_ME.get(
+      "GOOGLE_RECAPTCHA_SECRET_KEY"
+    );
+
     const recaptchaReq = await fetch(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${RecaptchaSecret}&response=${gRecaptchaResponse}`,
+      `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_RECAPTCHA_SECRET_KEY}&response=${gRecaptchaResponse}`,
 
       {
         method: "POST",
@@ -48,6 +45,10 @@ export async function onRequestPost(request) {
     if (!recaptchaResp.success) {
       return sendResponse({ error: "Invalid recaptcha" }, 401);
     }
+
+    const SENDGRID_API_KEY = await request.env.SIDDHESH_ME.get(
+      "SENDGRID_API_KEY"
+    );
 
     await fetch("https://api.sendgrid.com/v3/mail/send", {
       body: JSON.stringify({
@@ -72,7 +73,7 @@ export async function onRequestPost(request) {
         ],
       }),
       headers: {
-        Authorization: `Bearer ${SendgridApiKey}`,
+        Authorization: `Bearer ${SENDGRID_API_KEY}`,
         "Content-Type": "application/json",
       },
       method: "POST",
