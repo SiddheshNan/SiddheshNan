@@ -3,14 +3,16 @@ function sendResponse(
   status = 200,
   headers = {
     "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
-    "Access-Control-Allow-Headers": "*",
   }
 ) {
   return new Response(typeof data === "object" ? JSON.stringify(data) : data, {
     status,
-    headers,
+    headers: {
+      ...headers,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
+      "Access-Control-Allow-Headers": "*",
+    },
   });
 }
 
@@ -20,9 +22,16 @@ export async function onRequestGet(request) {
   });
 }
 
+export async function onRequestOptions(request) {
+  return sendResponse(null, 200, {
+    "Content-Type": "text/plain",
+  });
+}
+
 export async function onRequestPost(request) {
   try {
-    const { name, email, msg, gRecaptchaResponse } = await request.json();
+    const { name, email, msg, gRecaptchaResponse } =
+      await request.request.json();
 
     if (!name || !email || !msg || !gRecaptchaResponse) {
       return sendResponse({ error: "Input fields are not valid" }, 400);
@@ -81,6 +90,9 @@ export async function onRequestPost(request) {
 
     return sendResponse({ msg: "OK" }, 200);
   } catch (error) {
-    return sendResponse({ error: "Internal server error" }, 500);
+    return sendResponse(
+      { error: "Internal server error", type: error.name },
+      500
+    );
   }
 }
