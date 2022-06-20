@@ -159,7 +159,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 
   try {
     const contactReq = await fetch(
-      "https://portfolio.siddhesh.workers.dev/contact",
+      "https://siddhesh.me/api/contact",
       {
         body: JSON.stringify(dataToPost),
         headers: {
@@ -193,7 +193,7 @@ const showPage = () => {
 function parseMarkdown(markdownText) {
   const textAttr =
     'style="margin-bottom: 0.75rem; text-align: center" data-aos="zoom-in-up"';
-    
+
   const htmlText = markdownText
     .replace(/^###### (.*$)/gim, `<p ${textAttr}>$1</p>`)
     .replace(/^##### (.*$)/gim, `<p ${textAttr}>$1</p>`)
@@ -216,7 +216,6 @@ function parseMarkdown(markdownText) {
 
 const subTitle = document.getElementById("subTitleHome");
 const profilePicture = document.getElementById("profilePicture");
-const resumeDownloadLink = document.getElementById("resumeDownloadLink");
 const introDescription = document.getElementById("intro-description");
 
 const getUserInfo = async () => {
@@ -250,9 +249,6 @@ const getAboutInfo = async () => {
 };
 
 window.onload = () => {
-  resumeDownloadLink.href =
-    "https://github.com/SiddheshNan/SiddheshNan/raw/main/siddhesh_nandurkar_resume.pdf";
-
   Promise.all([getUserInfo(), getAboutInfo()])
     .then(showPage)
     .catch(console.error);
