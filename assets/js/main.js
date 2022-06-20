@@ -1,3 +1,59 @@
+const skills = [
+  {
+    name: "Core Languages",
+    row1: ["Python", "C, C++"],
+    row2: ["JavaScript<br/>& TypeScript", "GoLang"],
+  },
+
+  {
+    name: "Databases",
+    row1: ["MySQL", "Redis"],
+    row2: ["MongoDB", "DynamoDB"],
+  },
+
+  {
+    name: "Web Development",
+    row1: ["NodeJS", "GoLang:<br/>Gin & Mux", "React & React Native"],
+    row2: ["Flask <br/>& FastAPI", "HTML5, CSS3, JS", "Tailwind CSS & Bootstrap"],
+  },
+
+  {
+    name: "Machine Learning",
+    row1: ["Pandas, Scikit", "Tensorflow, Keras"],
+    row2: ["OpenCV, Image Processing", "Matplotlib, <br />Seaborn"],
+  },
+
+  {
+    name: "Internet of Things (IoT)",
+    row1: ["Arduino", "ESP8266, ESP32"],
+    row2: ["Raspberry Pi", "Hardware Modules"],
+  },
+
+  {
+    name: "DevOps",
+    row1: ["CI / CD", "Git"],
+    row2: ["Docker & Kubernetes", "Nginx & Apache"],
+  },
+
+  {
+    name: "Cloud Computing",
+    row1: ["AWS, GCP,<br />Azure & Firebase", "Cloudflare"],
+    row2: ["AppEngine & Serverless", "S3 Buckets"],
+  },
+
+  {
+    name: "Non-Technical Skills",
+    row1: ["Leadership Skills", "Communication Skills", "Decision Making"],
+    row2: [
+      "Problem-Solving",
+      "Self-Motivated & Active Learner",
+      "Listening Skills",
+    ],
+  },
+];
+
+//---
+
 function scrollHeader() {
   const header = document.getElementById("header");
   if (this.scrollY >= 50) header.classList.add("scroll-header");
@@ -158,16 +214,13 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     return alert("Please tick the recaptcha checkbox!");
 
   try {
-    const contactReq = await fetch(
-      "https://siddhesh.me/api/contact",
-      {
-        body: JSON.stringify(dataToPost),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      }
-    );
+    const contactReq = await fetch("https://siddhesh.me/api/contact", {
+      body: JSON.stringify(dataToPost),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
 
     const resp = await contactReq.json();
 
@@ -248,7 +301,33 @@ const getAboutInfo = async () => {
   }
 };
 
+const skillItem = (_skillName) => `
+  <div class="skills__data">
+    <i class="bx bxs-badge-check"></i>
+    <div>
+      <h3 class="skills__name">${_skillName}</h3>
+    </div>
+  </div>`;
+
+const skillBox = (_skillitem) => `
+    <div class="skills_content" data-aos="zoom-in-up">
+      <h3 class="skills__title">${_skillitem.name}</h3>
+      <div class="skills__box">
+        <div class="skills__group">
+          ${_skillitem.row1.map((_item) => skillItem(_item)).join("")}
+        </div>
+        <div class="skills__group">
+          ${_skillitem.row2.map((_item) => skillItem(_item)).join("")}
+        </div>
+      </div>
+    </div>
+`;
+
 window.onload = () => {
+  document.getElementById("skillsContainer").innerHTML = skills
+    .map((_skillblock) => skillBox(_skillblock))
+    .join("");
+
   Promise.all([getUserInfo(), getAboutInfo()])
     .then(showPage)
     .catch(console.error);
