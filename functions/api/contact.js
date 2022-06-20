@@ -15,28 +15,17 @@ function sendResponse(
 }
 
 export async function onRequestGet(request) {
-  try {
-    const GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY =
-      await request.env.SIDDHESH_ME.get(
-        "GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY"
-      );
-    const SENDGRID_SIDDHESH_ME_API_KEY = await request.env.SIDDHESH_ME.get(
-      "SENDGRID_SIDDHESH_ME_API_KEY"
-    );
-
-    return sendResponse({ msg: GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY }, 200);
-  } catch (error) {
-    return sendResponse({ error: "Internal server error" }, 500);
-  }
+  return sendResponse("Nothin' to see here, move along!", 403, {
+    "Content-Type": "text/plain",
+  });
 }
 
 export async function onRequestPost(request) {
   try {
-    const GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY =
-      await request.env.SIDDHESH_ME.get(
-        "GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY"
-      );
-    const SENDGRID_SIDDHESH_ME_API_KEY = await request.env.SIDDHESH_ME.get(
+    const RecaptchaSecret = await request.env.SIDDHESH_ME.get(
+      "GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY"
+    );
+    const SendgridApiKey = await request.env.SIDDHESH_ME.get(
       "SENDGRID_SIDDHESH_ME_API_KEY"
     );
 
@@ -47,10 +36,8 @@ export async function onRequestPost(request) {
     }
 
     const recaptchaReq = await fetch(
-      "https://www.google.com/recaptcha/api/siteverify?secret=" +
-        GOOGLE_RECAPTCHA_SIDDHESH_ME_SECRET_KEY +
-        "&response=" +
-        gRecaptchaResponse,
+      `https://www.google.com/recaptcha/api/siteverify?secret=${RecaptchaSecret}&response=${gRecaptchaResponse}`,
+
       {
         method: "POST",
       }
@@ -85,7 +72,7 @@ export async function onRequestPost(request) {
         ],
       }),
       headers: {
-        Authorization: "Bearer " + SENDGRID_SIDDHESH_ME_API_KEY,
+        Authorization: `Bearer ${SendgridApiKey}`,
         "Content-Type": "application/json",
       },
       method: "POST",
