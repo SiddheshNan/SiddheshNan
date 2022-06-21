@@ -219,13 +219,15 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     grecaptcha.reset();
     e.target.reset();
 
-    if (!resp.status) {
+    if (resp?.error) {
+      console.log(resp);
       return alert("Oh No! Somthing went wrong.. Please try again later.");
     }
+
     alert("Thanks! I'll reach out to you as soon as possible!");
   } catch (error) {
     console.log(error);
-    alert("Oh No! Somthing went wrong.. Please try again later.");
+    alert("Oh No! Somthing went wrong! Please try again later.");
   }
 });
 
