@@ -135,11 +135,11 @@ function scrollActive() {
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+        .classList.add("active-link", "fade-in");
     } else {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+        .classList.remove("active-link", "fade-in");
     }
   });
 }
@@ -249,6 +249,22 @@ const showPage = () => {
   sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
 
   AOS.init();
+
+  new Typewriter(document.getElementById("introSubtitle"), {
+    loop: true,
+    delay: 75,
+  })
+    .pauseFor(25)
+    .typeString("<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png' alt='man technologist' /> Full Stack Developer ✨")
+    .pauseFor(2222)
+    .deleteAll(25)
+    .typeString("Aspiring Data Engineer 🎯 ") 
+    .pauseFor(2222)
+    .deleteAll(25)
+    .typeString("<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> Graduate Student at Sipna COET 🏫 ")
+    .pauseFor(2222)
+    .deleteAll(25)
+    .start();
 };
 
 function parseMarkdown(markdownText) {
@@ -275,19 +291,17 @@ function parseMarkdown(markdownText) {
   return htmlText.trim();
 }
 
-const subTitle = document.getElementById("subTitleHome");
-const profilePicture = document.getElementById("profilePicture");
 const introDescription = document.getElementById("intro-description");
 
-const getUserInfo = async () => {
-  try {
-    const req = await fetch("https://api.github.com/users/siddheshnan");
-    const data = await req.json();
-    subTitle.innerHTML = data.bio.replace(/\r\n/g, "<br />");
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const getUserInfo = async () => {
+//   try {
+//     const req = await fetch("https://api.github.com/users/siddheshnan");
+//     const data = await req.json();
+//     // subTitle.innerHTML = data.bio.replace(/\r\n/g, "<br />");
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
 const getAboutInfo = async () => {
   try {
@@ -336,7 +350,9 @@ window.onload = () => {
     .map((_skillblock) => skillBox(_skillblock))
     .join("");
 
-  Promise.all([getUserInfo(), getAboutInfo()])
-    .then(showPage)
-    .catch(console.error);
+  // Promise.all([getUserInfo(), getAboutInfo()])
+  //   .then(showPage)
+  //   .catch(console.error);
+
+  getAboutInfo().then(showPage).catch(console.error);
 };

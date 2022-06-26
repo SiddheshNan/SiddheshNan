@@ -322,8 +322,9 @@ body.light-theme {
 
 .home__education {
   color: var(--text-color);
-  margin-bottom: 2.5rem;
-  font-size: var(--normal-font-size);
+  margin-bottom: 1.5rem;
+  margin-top: 0.33rem;
+  font-size: var(--h3-font-size);
 }
 
 .home__name {
@@ -1211,4 +1212,21 @@ body.light-theme {
   left: 0;
   position: fixed;
   background: var(--body-color);
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.15s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
