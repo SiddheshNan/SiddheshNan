@@ -255,13 +255,17 @@ const showPage = () => {
     delay: 75,
   })
     .pauseFor(25)
-    .typeString("<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png' alt='man technologist' /> Full Stack Developer ✨")
+    .typeString(
+      "<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png' alt='man technologist' /> Full Stack Developer ✨"
+    )
     .pauseFor(2222)
     .deleteAll(25)
-    .typeString("Aspiring Data Engineer 🎯 ") 
+    .typeString("Aspiring Data Engineer 🎯 ")
     .pauseFor(2222)
     .deleteAll(25)
-    .typeString("<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> Graduate Student at Sipna COET 🏫 ")
+    .typeString(
+      "<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> Graduate Student at Sipna COET 🏫 "
+    )
     .pauseFor(2222)
     .deleteAll(25)
     .start();
@@ -305,18 +309,13 @@ const introDescription = document.getElementById("intro-description");
 
 const getAboutInfo = async () => {
   try {
-    const req = await fetch(
-      "https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/README.md"
-    );
+    const req = await fetch("/README.md");
     const data = await req.text();
-
     const introData = data.split("<!-- INTRO_END -->")[0];
-
     const introHtml = parseMarkdown(introData)
       .replace('style="height:30px;width:30px;display:block;"', "")
       .replace('width="30px"', 'width="22px"')
       .replace('height="30px"', 'height="22px"');
-
     introDescription.innerHTML = introHtml;
   } catch (error) {
     console.error(error);
