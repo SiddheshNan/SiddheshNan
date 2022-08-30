@@ -8,7 +8,7 @@ const skills = [
   {
     name: "Databases",
     row1: ["MySQL", "Redis"],
-    row2: ["MongoDB", "DynamoDB"],
+    row2: ["MongoDB"],
   },
 
   {
@@ -20,13 +20,6 @@ const skills = [
       "Tailwind CSS & Bootstrap",
     ],
   },
-
-  {
-    name: "Machine Learning",
-    row1: ["Pandas, Scikit", "Tensorflow, Keras"],
-    row2: ["OpenCV, Image Processing", "Matplotlib, <br />Seaborn"],
-  },
-
   {
     name: "Internet of Things (IoT)",
     row1: ["Arduino", "ESP8266, ESP32"],
@@ -36,7 +29,7 @@ const skills = [
   {
     name: "DevOps",
     row1: ["CI / CD", "Git"],
-    row2: ["Docker & Kubernetes", "Nginx & Apache"],
+    row2: ["Docker", "Nginx & Apache"],
   },
 
   {
