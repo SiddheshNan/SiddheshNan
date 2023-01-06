@@ -1,11 +1,12 @@
 
 # Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/assets/img/wave.gif" width="30px" height="30px"  style="height:30px;width:30px;display:block;"> Nice to meet you :)
 
-#### 👨‍💻 My name is Siddhesh Nandurkar and I'm a Full-Stack Developer 💻 & Aspiring Data Engineer 🎯 always looking to learn new things.
+#### 👨‍💻 My name is Siddhesh Nandurkar and I'm a Experienced Full-Stack Web and IoT Developer 🎯 always looking to learn new things.
 
-#### 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in 3rd year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
+<!-- #### 💻 As a skilled IoT developer, I have a passion for creating innovative solutions that improve efficiency and drive business value. With my experience in Web and IoT, I have a strong foundation in the technical skills required to design and develop robust IoT systems. I am always looking for new challenges and opportunities to grow and make a positive impact in the industry." -->
 
-#### 🌱 I am currently learning Deep Learning & Computer Vision 👀
+#### 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in final year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
+
 
 #### 📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
 
@@ -21,7 +22,7 @@
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img alt="GoLang" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+<!--  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /> -->
 </p>
 
 
@@ -32,7 +33,7 @@
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img alt="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img alt="Svelte" src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00" />
-  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<!--  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" /> -->
 </p>
 
 
