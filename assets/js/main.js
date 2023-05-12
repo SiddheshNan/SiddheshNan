@@ -253,9 +253,9 @@ const showPage = () => {
     )
     .pauseFor(2222)
     .deleteAll(25)
-    .typeString("Aspiring Data Engineer 🎯 ")
-    .pauseFor(2222)
-    .deleteAll(25)
+   // .typeString("Aspiring Data Engineer 🎯 ")
+   // .pauseFor(2222)
+   // .deleteAll(25)
     .typeString(
       "<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> Graduate Student at Sipna COET 🏫 "
     )
