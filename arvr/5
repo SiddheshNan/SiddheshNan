@@ -1,3 +1,4 @@
+n Java3D to display Ball lit by red light
 Import com.sun.j3d.utils.geometry.*;
 Import com.sun.j3d.utils.universe.*;
 import javax.media.j3d.*;
