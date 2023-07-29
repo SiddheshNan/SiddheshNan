@@ -5,8 +5,9 @@
 
 <!-- #### 💻 As a skilled IoT developer, I have a passion for creating innovative solutions that improve efficiency and drive business value. With my experience in Web and IoT, I have a strong foundation in the technical skills required to design and develop robust IoT systems. I am always looking for new challenges and opportunities to grow and make a positive impact in the industry." -->
 
-#### 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> I'm currently studying in final year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓
+#### 📍 I'm from <b>Amravati, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> 
 
+<!-- I'm currently studying in final year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓 -->
 
 #### 📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
 
