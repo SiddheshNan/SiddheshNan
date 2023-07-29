@@ -2,7 +2,7 @@ const skills = [
   {
     name: "Core Languages",
     row1: ["Python", "C, C++"],
-    row2: ["JavaScript<br/>& TypeScript", "GoLang"],
+    row2: ["JavaScript", "GoLang"],
   },
 
   {
@@ -13,28 +13,34 @@ const skills = [
 
   {
     name: "Web Development",
-    row1: ["NodeJS", "GoLang:<br/>Gin & Mux", "React & React Native"],
+    row1: ["NodeJS, Express", "React & React Native","Svelte"],
     row2: [
-      "Flask <br/>& FastAPI",
+      "Flask",
       "HTML5, CSS3, JS",
       "Tailwind CSS & Bootstrap",
     ],
   },
   {
     name: "Internet of Things (IoT)",
-    row1: ["Arduino", "ESP8266, ESP32"],
-    row2: ["Raspberry Pi", "Hardware Modules"],
+    row1: ["Arduino", "ESP8266", "ESP32"],
+    row2: ["Raspberry Pi", "IoT Sensors", "Embedded C"],
+  },
+
+  {
+    name: "AI / ML",
+    row1: ["OpenCV", "Pandas"],
+    row2: ["Scikit", "Tensorflow"],
   },
 
   {
     name: "DevOps",
-    row1: ["CI / CD", "Git"],
+    row1: ["CI / CD", "Git , Linux"],
     row2: ["Docker", "Nginx & Apache"],
   },
 
   {
     name: "Cloud Computing",
-    row1: ["AWS, GCP,<br />Azure & Firebase", "Cloudflare"],
+    row1: ["AWS, GCP,<br />Azure", "Cloudflare"],
     row2: ["AppEngine & Serverless", "S3 Buckets"],
   },
 
@@ -43,7 +49,7 @@ const skills = [
     row1: ["Leadership Skills", "Communication Skills", "Decision Making"],
     row2: [
       "Problem-Solving",
-      "Self-Motivated & Active Learner",
+      "Self-Motivated, Active Learner",
       "Listening Skills",
     ],
   },
