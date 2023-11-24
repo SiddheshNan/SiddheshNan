@@ -8,17 +8,13 @@ const skills = [
   {
     name: "Databases",
     row1: ["MySQL", "Redis"],
-    row2: ["MongoDB"],
+    row2: ["MongoDB", "InfluxDB"],
   },
 
   {
     name: "Web Development",
-    row1: ["NodeJS, Express", "React & React Native","Svelte"],
-    row2: [
-      "Flask",
-      "HTML5, CSS3, JS",
-      "Tailwind CSS & Bootstrap",
-    ],
+    row1: ["NodeJS, Express", "React & React Native", "Svelte"],
+    row2: ["Flask", "HTML5, CSS3, JS", "Tailwind CSS & Bootstrap"],
   },
   {
     name: "Internet of Things (IoT)",
@@ -259,14 +255,16 @@ const showPage = () => {
     )
     .pauseFor(2222)
     .deleteAll(25)
-   // .typeString("Aspiring Data Engineer 🎯 ")
-   // .pauseFor(2222)
-   // .deleteAll(25)
+    // .typeString("Aspiring Data Engineer 🎯 ")
+    // .pauseFor(2222)
+    // .deleteAll(25)
+
     .typeString(
-      "<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> Graduate Student at Sipna COET 🏫 "
+      `<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> IT'2023 Graduate from Sipna COET, Amravati 🏫`
     )
     .pauseFor(2222)
     .deleteAll(25)
+
     .start();
 };
 
