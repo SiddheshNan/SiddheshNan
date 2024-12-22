@@ -1,8 +1,14 @@
 const skills = [
   {
-    name: "Core Languages",
-    row1: ["Python", "C, C++"],
-    row2: ["JavaScript", "GoLang"],
+    name: "Languages",
+    row1: ["Python", "C/C++", "Embedded C" ],
+    row2: ["TypeScript", "Java", "Go Lang"],
+  },
+
+  {
+    name: "Web Development",
+    row1: ["ReactJS",   "React Native", "NextJS"],
+    row2: ["Flask/FastAPI", "Django", "NodeJS"]
   },
 
   {
@@ -12,43 +18,35 @@ const skills = [
   },
 
   {
-    name: "Web Development",
-    row1: ["NodeJS, Express", "React & React Native", "Svelte"],
-    row2: ["Flask", "HTML5, CSS3, JS", "Tailwind CSS & Bootstrap"],
+    name: "Embedded Systems",
+    row1: ["PIC/AVR", "Espressif boards"],
+    row2: ["RaspberryPi/Jetson Nano", "Firmware Development"],
   },
+
+
   {
-    name: "Internet of Things (IoT)",
-    row1: ["Arduino", "ESP8266", "ESP32"],
-    row2: ["Raspberry Pi", "IoT Sensors", "Embedded C"],
+    name: "Artificial Intelligence",
+    row1: ["GenAI / LLMs",  "LangChain / LangGraph", "Llama Index"],
+    row2: ["LLM Agents",  "Tensorflow", "Scikit"],
   },
 
   {
-    name: "AI / ML",
-    row1: ["OpenCV", "Pandas"],
-    row2: ["Scikit", "Tensorflow"],
+    name: "DevOps & Cloud",
+    row1: ["CI / CD", "Git , Linux", "AWS & Azure"],
+    row2: ["Docker", "Kubernates", "Serverless"],
   },
 
-  {
-    name: "DevOps",
-    row1: ["CI / CD", "Git , Linux"],
-    row2: ["Docker", "Nginx & Apache"],
-  },
+  
 
-  {
-    name: "Cloud Computing",
-    row1: ["AWS, GCP,<br />Azure", "Cloudflare"],
-    row2: ["AppEngine & Serverless", "S3 Buckets"],
-  },
-
-  {
-    name: "Non-Technical Skills",
-    row1: ["Leadership Skills", "Communication Skills", "Decision Making"],
-    row2: [
-      "Problem-Solving",
-      "Self-Motivated, Active Learner",
-      "Listening Skills",
-    ],
-  },
+  // {
+  //   name: "Non-Technical Skills",
+  //   row1: ["Leadership Skills", "Communication Skills", "Decision Making"],
+  //   row2: [
+  //     "Problem-Solving",
+  //     "Self-Motivated, Active Learner",
+  //     "Listening Skills",
+  //   ],
+  // },
 ];
 
 //---
@@ -259,11 +257,11 @@ const showPage = () => {
     // .pauseFor(2222)
     // .deleteAll(25)
 
-    .typeString(
-      `<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> IT'2023 Graduate from Sipna COET, Amravati 🏫`
-    )
-    .pauseFor(2222)
-    .deleteAll(25)
+    // .typeString(
+    //   `<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> IT'2023 Graduate from Sipna COET, Amravati 🏫`
+    // )
+    // .pauseFor(2222)
+    // .deleteAll(25)
 
     .start();
 };
@@ -319,6 +317,17 @@ const getAboutInfo = async () => {
   }
 };
 
+const getBlogItemsApi = async () => {
+  try {
+    const req = await fetch("https://blog.siddhesh.me/index.json");
+    const data = await req.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 const skillItem = (_skillName) => `
   <div class="skills__data">
     <i class="bx bxs-badge-check"></i>
@@ -326,6 +335,33 @@ const skillItem = (_skillName) => `
       <h3 class="skills__name">${_skillName}</h3>
     </div>
   </div>`;
+
+const blogItem = (item) => {
+  // item.image is a picture component html string, find a src component in it
+
+  let pictureSrc = item.image.match(/src="([^"]*)"/)[1];
+
+  if (pictureSrc.startsWith("/")) {
+    pictureSrc = `https://blog.siddhesh.me${pictureSrc}`;
+  }
+
+  console.log(pictureSrc);
+
+  return `<div class="work__card mix web">
+          <a href="${item.permalink}" target="_blank" style="color: var( --text-color)">
+            <h3 class="work__title">${item.title}</h3>
+            <h6 class="work__date">${item.date}</h6>
+            <img src="${pictureSrc}" alt="${item.title}" class="work__img" />
+            <h5 class="work__subtitle">${String(item.contents).slice(
+              0,
+              200
+            )}...</h5>
+            </a>
+            <a href="${item.permalink}" target="_blank" class="work__button">
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>`;
+};
 
 const skillBox = (_skillitem) => `
     <div class="skills_content" data-aos="zoom-in-up">
@@ -345,6 +381,14 @@ window.onload = () => {
   document.getElementById("skillsContainer").innerHTML = skills
     .map((_skillblock) => skillBox(_skillblock))
     .join("");
+
+  getBlogItemsApi()
+    .then((data) => {
+      document.getElementById("blogContainer").innerHTML = data
+        .map((_blogItem) => blogItem(_blogItem))
+        .join("");
+    })
+    .catch(console.error);
 
   // Promise.all([getUserInfo(), getAboutInfo()])
   //   .then(showPage)

@@ -8,8 +8,16 @@
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-    <link rel="preload" as="image" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png">
-    <link rel="preload" as="image" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png">
+    <link
+      rel="preload"
+      as="image"
+      href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png"
+    />
 
     <link
       rel="stylesheet"
@@ -131,6 +139,14 @@
               </a>
             </li> -->
 
+             
+             <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bxs-pen"></i>
+              </a>
+            </li>
+            
+
             <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="bx bx-message-square-detail"></i>
@@ -195,6 +211,13 @@
               class="home__social-link"
             >
               <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/SiddheshNan/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="bx bx-code-alt"></i>
             </a>
 
             <a
@@ -295,7 +318,8 @@
       </section>
 
       <!--=============== SERVICES ===============-->
-      <!--   <section class="services section">
+
+      <!-- <section class="services section">
         <span class="section__subtitle" data-aos="zoom-in">My Services</span>
         <h2 class="section__title" data-aos="zoom-in">What I Offer</h2>
 
@@ -506,57 +530,26 @@
 
       <!--=============== WORK ===============-->
 
-      <section class="work section" style="display: none">
-        <span class="section__subtitle">Portfolio</span>
-        <h2 class="section__title">My Recent Projects</h2>
+      <section class="work section" id="work">
+        <span class="section__subtitle">Blog Posts</span>
+        <h2 class="section__title">Recent Thoughts & Writings</h2>
 
-        <div class="work__filters">
+        <!-- <div class="work__filters">
           <span class="work__item active-work" data-filter="all">All</span>
           <span class="work__item" data-filter=".web">Web</span>
           <span class="work__item" data-filter=".movil">Movil</span>
           <span class="work__item" data-filter=".design">Design</span>
-        </div>
+        </div> -->
 
-        <div class="work__container container grid">
-          <div class="work__card mix web">
+        <div class="work__container container grid" id="blogContainer">
+          <!-- <div class="work__card mix web">
             <img src="assets/img/work1.jpg" alt="" class="work__img" />
             <h3 class="work__title">Web design</h3>
+            <h3 class="work__subtitle">Web design</h3>
             <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
-          </div>
-
-          <div class="work__card mix movil">
-            <img src="assets/img/work2.jpg" alt="" class="work__img" />
-            <h3 class="work__title">App movil</h3>
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix design">
-            <img src="assets/img/work3.jpg" alt="" class="work__img" />
-            <h3 class="work__title">Brand design</h3>
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix movil">
-            <img src="assets/img/work4.jpg" alt="" class="work__img" />
-            <h3 class="work__title">Web design</h3>
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
-            <h3 class="work__title">App movil</h3>
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -641,11 +634,11 @@
         </div>
 
         <div class="contact__container container grid">
-       <div class="contact__content" data-aos="zoom-in-up">
+          <div class="contact__content" data-aos="zoom-in-up">
             <h3 class="contact__title">Message me</h3>
 
             <div class="contact__info">
-                 <div class="contact__card">
+              <div class="contact__card">
                 <i class="bx bx-mail-send contact__card-icon"> </i>
                 <h3 class="contact__card-title">Email</h3>
                 <span class="contact__card-data">hello@siddhesh.me</span>
@@ -659,7 +652,7 @@
                 ></a>
               </div>
 
-            <div class="contact__card">
+              <div class="contact__card">
                 <i class="bx bxl-twitter contact__card-icon"> </i>
                 <h3 class="contact__card-title">Twitter</h3>
                 <span class="contact__card-data">@SiddheshNan </span>
