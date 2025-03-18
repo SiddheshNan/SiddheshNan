@@ -1,14 +1,14 @@
 const skills = [
   {
     name: "Languages",
-    row1: ["Python", "C/C++", "Embedded C" ],
-    row2: ["TypeScript", "Java", "Go Lang"],
+    row1: ["Python", "JavaScript", "Java"],
+    row2: [ "TypeScript", "Go Lang",],
   },
 
   {
     name: "Web Development",
-    row1: ["ReactJS",   "React Native", "NextJS"],
-    row2: ["Flask/FastAPI", "Django", "NodeJS"]
+    row1: ["React JS", "React Native", "Next JS"],
+    row2: ["Flask/FastAPI", "Django", "Node JS"],
   },
 
   {
@@ -18,17 +18,26 @@ const skills = [
   },
 
   {
-    name: "Embedded Systems",
-    row1: ["PIC/AVR", "Espressif boards"],
-    row2: ["RaspberryPi/Jetson Nano", "Firmware Development"],
+    name: "Frontend Frameworks",
+    row1: ["Tailwind CSS", "Material UI", "Bootstrap"],
+    row2: ["Chakra UI", "Ant Design", "Styled Components"],
   },
 
 
-  {
-    name: "Artificial Intelligence",
-    row1: ["GenAI / LLMs",  "LangChain / LangGraph", "Llama Index"],
-    row2: ["LLM Agents",  "Tensorflow", "Scikit"],
-  },
+
+ 
+
+  // {
+  //   name: "Embedded Systems",
+  //   row1: ["PIC/AVR", "Espressif boards"],
+  //   row2: ["RaspberryPi/Jetson Nano", "Firmware Development"],
+  // },
+
+  // {
+  //   name: "Artificial Intelligence",
+  //   row1: ["GenAI / LLMs", "LangChain / LangGraph", "Llama Index"],
+  //   row2: ["LLM Agents", "Tensorflow", "Scikit"],
+  // },
 
   {
     name: "DevOps & Cloud",
@@ -36,17 +45,18 @@ const skills = [
     row2: ["Docker", "Kubernates", "Serverless"],
   },
 
-  
-
-  // {
-  //   name: "Non-Technical Skills",
-  //   row1: ["Leadership Skills", "Communication Skills", "Decision Making"],
-  //   row2: [
-  //     "Problem-Solving",
-  //     "Self-Motivated, Active Learner",
-  //     "Listening Skills",
-  //   ],
-  // },
+  {
+    name: "Non-Technical Skills",
+    row1: [
+      "Strategic Problem-Solving",
+      "Proactive and Continuous Learner",
+      //"Decision Making"
+    ],
+    row2: [
+      "Data-Driven Decision Making",
+      "Effective Communication and Active Listening",
+    ],
+  },
 ];
 
 //---
@@ -348,7 +358,9 @@ const blogItem = (item) => {
   console.log(pictureSrc);
 
   return `<div class="work__card mix web">
-          <a href="${item.permalink}" target="_blank" style="color: var( --text-color)">
+          <a href="${
+            item.permalink
+          }" target="_blank" style="color: var( --text-color)">
             <h3 class="work__title">${item.title}</h3>
             <h6 class="work__date">${item.date}</h6>
             <img src="${pictureSrc}" alt="${item.title}" class="work__img" />
@@ -382,13 +394,13 @@ window.onload = () => {
     .map((_skillblock) => skillBox(_skillblock))
     .join("");
 
-  getBlogItemsApi()
-    .then((data) => {
-      document.getElementById("blogContainer").innerHTML = data
-        .map((_blogItem) => blogItem(_blogItem))
-        .join("");
-    })
-    .catch(console.error);
+  // getBlogItemsApi()
+  //   .then((data) => {
+  //     document.getElementById("blogContainer").innerHTML = data
+  //       .map((_blogItem) => blogItem(_blogItem))
+  //       .join("");
+  //   })
+  //   .catch(console.error);
 
   // Promise.all([getUserInfo(), getAboutInfo()])
   //   .then(showPage)
