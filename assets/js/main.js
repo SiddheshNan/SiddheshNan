@@ -7,14 +7,14 @@ const skills = [
 
   {
     name: "Web Development",
-    row1: ["React JS", "React Native", "Next JS"],
-    row2: ["Flask/FastAPI", "Django", "Node JS"],
+    row1: ["React JS", "React Native",  "Node JS"],
+    row2: ["Angular", "Next JS", "Flask/FastAPI"],
   },
 
   {
     name: "Databases",
     row1: ["MySQL", "Redis"],
-    row2: ["MongoDB", "InfluxDB"],
+    row2: ["MongoDB"],
   },
 
   {
@@ -41,8 +41,8 @@ const skills = [
 
   {
     name: "DevOps & Cloud",
-    row1: ["CI / CD", "Git , Linux", "AWS & Azure"],
-    row2: ["Docker", "Kubernates", "Serverless"],
+    row1: ["CI / CD", "Git , Linux",],
+    row2: ["Docker",  "AWS, Azure"],
   },
 
   {
