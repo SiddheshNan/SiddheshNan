@@ -1,11 +1,11 @@
 
 # Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/assets/img/wave.gif" width="30px" height="30px"  style="height:30px;width:30px;display:block;"> Nice to meet you :)
 
-#### 👨‍💻 My name is Siddhesh Nandurkar and I'm an Experienced Full-Stack Developer 🎯 always looking to learn new things.
+#### 👨‍💻 My name is Siddhesh Nandurkar and I'm Senior Software Engineer at Intelimek LLC, Pune.
 
 <!-- #### 💻 As a skilled IoT developer, I have a passion for creating innovative solutions that improve efficiency and drive business value. With my experience in Web and IoT, I have a strong foundation in the technical skills required to design and develop robust IoT systems. I am always looking for new challenges and opportunities to grow and make a positive impact in the industry." -->
 
-#### 📍 I'm from <b>Pune, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/> 
+<!-- #### 📍 I'm from <b>Pune, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/>  -->
 
 <!-- I'm currently studying in final year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓 -->
 
