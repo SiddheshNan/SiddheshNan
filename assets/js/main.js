@@ -2,12 +2,12 @@ const skills = [
   {
     name: "Languages",
     row1: ["Python", "JavaScript", "Java"],
-    row2: [ "TypeScript", "Go Lang",],
+    row2: ["TypeScript", "Go Lang", "C/C++"],
   },
 
   {
     name: "Web Development",
-    row1: ["React JS", "React Native",  "Node JS"],
+    row1: ["React JS", "React Native", "Node JS"],
     row2: ["Angular", "Next JS", "Flask/FastAPI"],
   },
 
@@ -23,10 +23,6 @@ const skills = [
     row2: ["Chakra UI", "Ant Design", "Styled Components"],
   },
 
-
-
- 
-
   // {
   //   name: "Embedded Systems",
   //   row1: ["PIC/AVR", "Espressif boards"],
@@ -41,8 +37,8 @@ const skills = [
 
   {
     name: "DevOps & Cloud",
-    row1: ["CI / CD", "Git , Linux",],
-    row2: ["Docker",  "AWS, Azure"],
+    row1: ["CI / CD", "Git , Linux"],
+    row2: ["Docker", "AWS, Azure"],
   },
 
   {
@@ -55,6 +51,40 @@ const skills = [
     row2: [
       "Data-Driven Decision Making",
       "Effective Communication and Active Listening",
+    ],
+  },
+];
+
+const work = [
+  {
+    designation: "Senior Software Engineer",
+    date: "Aug 2023 - Present",
+
+    company: "Intelimek LLC, Pune",
+    companyLink: "https://www.intelimek.com",
+    items: [
+      "Worked as a Full-Stack Developer, managing both architectural and development responsibilities.",
+      "<b>Designed and architected</b> a computer vision-based product to optimize performance and efficient communication across both monolithic and microservice architectures, <b>achieving a 40% reduction in processing time</b>.",
+      "Developed and maintained backend and frontend systems for multiple projects.",
+      "Created and deployed cloud-native applications, alongside few desktop applications.",
+      "Built internal tools to streamline workflows, including debugging, testing, and deployment pipelines, <b>resulting in a 60% improvement</b> in development efficiency and faster delivery cycles.",
+      "<b>Technology Stack - Python, JavaScript, React JS, Flask, Node JS, REST API, RabbitMQ, Azure, Docker, Linux, Git, CI/CD</b>.",
+    ],
+  },
+
+  {
+    designation: "Full-Stack Developer (Part Time)",
+    date: "Aug 2020 - Mar 2022",
+
+    company: "Aim Technologies, Amravati",
+    companyLink: "https://aimtechs.co.in",
+    items: [
+      "Primarily worked as a Full-Stack Developer.",
+      "Gained extensive experience in developing <b>frontend and backend systems</b> using Python, Flask, ReactJS, and Node JS.",
+      "Developed <b>3 Android/iOS</b> applications using React Native Framework.",
+      "Integrated multiple IoT and CV-based applications with the web platform.",
+      "Deployed and maintained 10+ applications on the AWS cloud.",
+      "<b>Technology Stack - Python, C++, JavaScript, Flask, ReactJS, React Native, Java, AWS, Linux, Git</b>.",
     ],
   },
 ];
@@ -258,14 +288,12 @@ const showPage = () => {
     delay: 75,
   })
     .pauseFor(25)
-    .typeString(
-      "<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-technologist_1f468-200d-1f4bb.png' alt='man technologist' /> Full Stack Developer ✨"
-    )
+    .typeString("Senior Software Engineer @ Intelimek LLC, Pune")
     .pauseFor(2222)
     .deleteAll(25)
-    // .typeString("Aspiring Data Engineer 🎯 ")
-    // .pauseFor(2222)
-    // .deleteAll(25)
+    .typeString("Full Stack Developer ✨")
+    .pauseFor(2222)
+    .deleteAll(25)
 
     // .typeString(
     //   `<img style='height: 1.6rem; width:1.6rem;  vertical-align: text-bottom;' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/man-student_1f468-200d-1f393.png' alt='Student' /> IT'2023 Graduate from Sipna COET, Amravati 🏫`
@@ -389,9 +417,43 @@ const skillBox = (_skillitem) => `
     </div>
 `;
 
+const workExpItem = (item) => {
+  const points = item.items
+    .map((point) => `<li class="experience__item">${point}</li>`)
+    .join("");
+
+  return `<div class="experience__card" data-aos="fade-up">
+            <div class="experience__header">
+              <h3 class="experience__title">${item.designation}</h3>
+              <span class="experience__time">${item.date}</span>
+            </div>
+            <p class="experience__company">
+              <a
+                href="${item.companyLink}"
+                target="_blank"
+                style="
+                  color: var(--first-color);
+                  text-decoration: underline;
+                  text-underline-offset: 0.25rem;
+                "
+              >
+                ${item.company}
+                <i class="bx bx-link-external" style="font-size: 1.1rem"></i>
+              </a>
+            </p>
+            <ul class="experience__list">
+              ${points}
+            </ul>
+          </div>`;
+};
+
 window.onload = () => {
   document.getElementById("skillsContainer").innerHTML = skills
     .map((_skillblock) => skillBox(_skillblock))
+    .join("");
+
+  document.getElementById("workContainer").innerHTML = work
+    .map((_workItem) => workExpItem(_workItem))
     .join("");
 
   // getBlogItemsApi()

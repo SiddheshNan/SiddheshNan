@@ -1259,3 +1259,63 @@ body.light-theme {
 		opacity: 1;
 	}
 }
+
+
+/*=============== EXPERIENCE ===============*/
+.experience__container {
+  grid-template-columns: repeat(1, 1fr); /* Adjust columns as needed */
+  gap: 1.5rem;
+}
+
+.experience__card {
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1); /* Consistent box shadow */
+}
+
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.experience__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.experience__time {
+  font-size: var(--h4-font-size);
+  color: var(--text-color-light);
+}
+
+.experience__company {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.75rem;
+  color: var(--first-color);
+}
+
+.experience__list {
+  padding-left: 1.5rem;
+}
+
+.experience__item {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 0.35rem;
+  list-style-type: disc;
+}
+
+/* Light Theme Adjustments */
+.light-theme .experience__card {
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.experience__list > .experience__item > b {
+  color: var( --title-color);
+}
