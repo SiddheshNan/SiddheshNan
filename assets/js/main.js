@@ -58,9 +58,9 @@ const skills = [
 const work = [
   {
     designation: "Software Engineer",
-    date: "Aug 2023 - Present",
+    date: "Feb 2024 - Present",
 
-    company: "Intelimek LLC, Pune",
+    company: "Intelimek Systems, Pune",
     companyLink: "https://www.intelimek.com",
     items: [
       "Worked as a Full-Stack Developer, managing both architectural and development responsibilities.",
@@ -72,21 +72,21 @@ const work = [
     ],
   },
 
-  {
-    designation: "Full-Stack Developer (Part Time)",
-    date: "Aug 2020 - Mar 2022",
+  // {
+  //   designation: "Full-Stack Developer (Part Time)",
+  //   date: "Aug 2020 - Mar 2022",
 
-    company: "Aim Technologies, Amravati",
-    companyLink: "https://aimtechs.co.in",
-    items: [
-      "Primarily worked as a Full-Stack Developer.",
-      "Gained extensive experience in developing <b>frontend and backend systems</b> using Python, Flask, ReactJS, and Node JS.",
-      "Developed <b>3 Android/iOS</b> applications using React Native Framework.",
-      "Integrated multiple IoT and CV-based applications with the web platform.",
-      "Deployed and maintained 10+ applications on the AWS cloud.",
-      "<b>Technology Stack - Python, C++, JavaScript, Flask, ReactJS, React Native, Java, AWS, Linux, Git</b>.",
-    ],
-  },
+  //   company: "Aim Technologies, Amravati",
+  //   companyLink: "https://aimtechs.co.in",
+  //   items: [
+  //     "Primarily worked as a Full-Stack Developer.",
+  //     "Gained extensive experience in developing <b>frontend and backend systems</b> using Python, Flask, ReactJS, and Node JS.",
+  //     "Developed <b>3 Android/iOS</b> applications using React Native Framework.",
+  //     "Integrated multiple IoT and CV-based applications with the web platform.",
+  //     "Deployed and maintained 10+ applications on the AWS cloud.",
+  //     "<b>Technology Stack - Python, C++, JavaScript, Flask, ReactJS, React Native, Java, AWS, Linux, Git</b>.",
+  //   ],
+  // },
 ];
 
 //---
