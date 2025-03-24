@@ -57,7 +57,7 @@ const skills = [
 
 const work = [
   {
-    designation: "Senior Software Engineer",
+    designation: "Software Engineer",
     date: "Aug 2023 - Present",
 
     company: "Intelimek LLC, Pune",
@@ -288,7 +288,7 @@ const showPage = () => {
     delay: 75,
   })
     .pauseFor(25)
-    .typeString("Senior Software Engineer @ Intelimek LLC, Pune")
+    .typeString("Software Engineer @ Intelimek Systems")
     .pauseFor(2222)
     .deleteAll(25)
     .typeString("Full Stack Developer ✨")
