@@ -1,30 +1,40 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import type { CollectionEntry } from "astro:content";
 
 interface BlogPreviewSectionProps {
   className?: string;
 }
 
 export default function BlogPreviewSection({ className }: BlogPreviewSectionProps) {
-  const [posts, setPosts] = useState<CollectionEntry<"blog">[]>([]);
+  const [posts, setPosts] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Define fetchPosts outside useEffect so it can be called from other places
+  const fetchPosts = async () => {
+    try {
+      // Use the prerendered static JSON file
+      const response = await fetch("/api/blog-preview/data.json");
+      if (!response.ok) {
+        throw new Error(`Failed to fetch blog posts: ${response.status} ${response.statusText}`);
+      }
+      const data = await response.json();
+      if (!data.posts || !Array.isArray(data.posts)) {
+        console.warn("Blog posts data is not in expected format:", data);
+        setPosts([]);
+      } else {
+        setPosts(data.posts.slice(0, 3)); // Only get the latest 3
+      }
+      setIsLoading(false);
+    } catch (error) {
+      console.error("Error fetching blog posts:", error);
+      setError(error instanceof Error ? error.message : "Failed to load blog posts");
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    async function fetchPosts() {
-      try {
-        // This is a client-side fetch of posts
-        const response = await fetch("/api/blog-preview");
-        const data = await response.json();
-        setPosts(data.posts.slice(0, 3)); // Only get the latest 3
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error fetching blog posts:", error);
-        setIsLoading(false);
-      }
-    }
-
     fetchPosts();
   }, []);
 
@@ -43,7 +53,7 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
             Check out my latest articles.
           </p>
         </motion.div>
-
+        
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
@@ -52,6 +62,20 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
                 className="h-64 rounded-lg bg-card/20 animate-pulse"
               />
             ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-8">
+            <p className="text-red-500 mb-4">{error}</p>
+            <button 
+              onClick={() => {
+                setIsLoading(true);
+                setError(null);
+                fetchPosts();
+              }}
+              className="px-4 py-2 bg-purple-500/10 text-purple-500 rounded-full hover:bg-purple-500/20 transition-colors"
+            >
+              Try again
+            </button>
           </div>
         ) : posts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

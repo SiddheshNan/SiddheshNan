@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+
+// Use getStaticPaths for static API JSON files
+export async function getStaticPaths() {
+  try {
+    const posts = await getCollection("blog", ({ data }: { data: any }) => {
+      return import.meta.env.PROD ? !data.draft : true;
+    });
+
+    // Sort posts by publication date (newest first)
+    const sortedPosts = posts.sort(
+      (a: any, b: any) => b.data.date.valueOf() - a.data.date.valueOf()
+    );
+
+    // Prepare response data without the Content function
+    const responseData = sortedPosts.map((post: any) => ({
+      slug: post.slug,
+      data: post.data,
+    }));
+
+    // Return a path that will generate a proper JSON file
+    return [
+      {
+        params: { id: "data" },
+        props: { posts: responseData }
+      }
+    ];
+  } catch (error) {
+    console.error("Error generating blog preview data:", error);
+    return [
+      {
+        params: { id: "data" },
+        props: { posts: [], error: true }
+      }
+    ];
+  }
+}
+
+const { posts, error } = Astro.props;
+return new Response(
+  JSON.stringify({ posts }),
+  {
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+);
+---
