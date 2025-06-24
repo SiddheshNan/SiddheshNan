@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 
 interface BlogPreviewSectionProps {
   className?: string;
 }
 
-export default function BlogPreviewSection({ className }: BlogPreviewSectionProps) {
+export default function BlogPreviewSection({
+  className,
+}: BlogPreviewSectionProps) {
   const [posts, setPosts] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -17,7 +20,9 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
       // Use the prerendered static JSON file
       const response = await fetch("/api/blog-preview/data.json");
       if (!response.ok) {
-        throw new Error(`Failed to fetch blog posts: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `Failed to fetch blog posts: ${response.status} ${response.statusText}`
+        );
       }
       const data = await response.json();
       if (!data.posts || !Array.isArray(data.posts)) {
@@ -29,7 +34,9 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
       setIsLoading(false);
     } catch (error) {
       console.error("Error fetching blog posts:", error);
-      setError(error instanceof Error ? error.message : "Failed to load blog posts");
+      setError(
+        error instanceof Error ? error.message : "Failed to load blog posts"
+      );
       setIsLoading(false);
     }
   };
@@ -53,7 +60,7 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
             Check out my latest articles.
           </p>
         </motion.div>
-        
+
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
@@ -66,7 +73,7 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
         ) : error ? (
           <div className="text-center py-8">
             <p className="text-red-500 mb-4">{error}</p>
-            <button 
+            <button
               onClick={() => {
                 setIsLoading(true);
                 setError(null);
@@ -105,6 +112,15 @@ export default function BlogPreviewSection({ className }: BlogPreviewSectionProp
                   <p className="line-clamp-2 text-sm text-foreground/70">
                     {post.data.description}
                   </p>
+
+                  <div className="mt-auto flex items-center justify-between">
+                    <span className="text-xs text-foreground/60">
+                      {formatDate(new Date(post.data.date))}
+                    </span>
+                    <span className="text-sm font-medium text-purple-500">
+                      Read more →
+                    </span>
+                  </div>
                 </div>
               </motion.a>
             ))}

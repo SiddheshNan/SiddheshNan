@@ -17,6 +17,7 @@ export async function getStaticPaths() {
     const responseData = sortedPosts.map((post: any) => ({
       slug: post.slug,
       data: post.data,
+      date: post.data.date.toISOString(),
     }));
 
     // Return a path that will generate a proper JSON file
