@@ -60,29 +60,20 @@ const { title, description } = Astro.props;
     });
   }
 
-  // Handle hash navigation when the page loads
   document.addEventListener("DOMContentLoaded", () => {
-    // Check if we're on the home page and there's a hash in the URL
     if (window.location.pathname === "/" && window.location.hash) {
-      const targetId = window.location.hash.substring(1); // Remove the # character
-
-      // Function to scroll to element
+      const targetId = window.location.hash.substring(1);
       const scrollToElement = () => {
         const targetElement = document.getElementById(targetId);
-
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "smooth" });
           return true;
         }
         return false;
       };
-
-      // Try immediately (might not work if React components aren't mounted yet)
       if (!scrollToElement()) {
-        // Try again after a delay to allow React components to render
         setTimeout(() => {
           if (!scrollToElement()) {
-            // Try one more time with a longer delay
             setTimeout(scrollToElement, 1000);
           }
         }, 500);
