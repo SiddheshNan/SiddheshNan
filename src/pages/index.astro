@@ -10,9 +10,13 @@ import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import BlogPreviewSection from "@/components/BlogPreviewSection";
 import Footer from "@/components/Footer";
+import { personalInfo } from "@/lib/data";
 ---
 
-<Layout>
+<Layout
+title="Siddhesh Nandurkar - Software Engineer"
+description={`Hello, I'm Siddhesh Nandurkar, ${personalInfo.bio}`}
+>
   <GlassHeader client:only="react" />
   <main class="min-h-screen">
     <HeroSection client:only="react" />

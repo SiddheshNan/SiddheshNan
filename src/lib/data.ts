@@ -5,7 +5,6 @@ export const personalInfo = {
   email: "sid@siddhesh.me",
   github: "https://github.com/SiddheshNan",
   linkedin: "https://www.linkedin.com/in/siddheshnan/",
-  
   bio: "Full-Stack Engineer with over ~2 years of experience in designing, developing, and deploying scalable applications. Proficient in full-stack development, cloud-native architecture, and modern web applications.",
 };
 
