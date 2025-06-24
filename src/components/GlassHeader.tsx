@@ -27,7 +27,7 @@ export default function GlassHeader() {
             (item, index) => (
               <motion.a
                 key={item}
-                href={item === "blog" ? "/blog" : `/#${item}`}
+                href={item.includes("blog") ? "/blog" : `/#${item}`}
                 className="transition-colors hover:text-foreground/80 text-foreground/60"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
