@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+
+export const prerender = true;
+
+export async function GET() {
+  const posts = await getCollection('blog', ({ data }) => {
+    return import.meta.env.PROD ? !data.draft : true;
+  });
+  
+  // Sort posts by publication date (newest first)
+  const sortedPosts = posts.sort((a, b) => 
+    b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  
+  // Prepare response data without the Content function
+  // Just include the metadata needed for previews
+  const responseData = sortedPosts.map(post => ({
+    slug: post.slug,
+    data: post.data
+  }));
+  
+  return new Response(
+    JSON.stringify({
+      posts: responseData
+    }),
+    {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
+}
+---

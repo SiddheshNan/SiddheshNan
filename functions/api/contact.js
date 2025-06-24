@@ -60,7 +60,7 @@ export async function onRequestPost(request) {
           {
             to: [
               {
-                email: "hello@siddhesh.me",
+                email: "sid@siddhesh.me",
               },
             ],
             subject: "[siddhesh.me] New contact form enquiry",

@@ -1,0 +1,71 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import BlogCard from "@/components/BlogCard";
+import GlassHeader from "@/components/GlassHeader";
+import Footer from "@/components/Footer";
+
+// Get all blog posts that aren't drafts
+const posts = await getCollection("blog", ({ data }) => {
+  return import.meta.env.PROD ? !data.draft : true;
+});
+
+// Sort posts by publication date
+const sortedPosts = posts.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+// Get all unique tags
+const allTags = [...new Set(posts.map((post) => post.data.tags).flat())];
+
+// Page title and description
+const title = "Blog | Siddhesh Nandurkar";
+const description =
+  "Articles and thoughts on web development, technology, and programming";
+---
+
+<Layout title={title} description={description}>
+  <GlassHeader client:only="react" />
+
+  <main class="container max-w-4xl mx-auto px-4 py-12">
+    <section class="mb-12">
+      <h1 class="text-4xl font-bold mb-6">Siddhesh&#39;s Blog</h1>
+      <p class="text-lg text-foreground/70 max-w-2xl">
+        Siddhesh&#39;s Blog offers insightful explorations into ancient Indian
+        philosophy, delving into Vedic roots and spiritual wisdom for a deeper
+        understanding of life and existence.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Tags</h2>
+      <div class="flex flex-wrap gap-2">
+        {
+          allTags.map((tag) => (
+            <a
+              href={`/blog/tag/${tag}`}
+              class="inline-flex items-center rounded-full border border-border/40 bg-card/30 px-3 py-1 text-sm backdrop-blur-md transition-colors hover:bg-card/50"
+            >
+              {tag}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6">Latest Articles</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        {
+          sortedPosts.map((post) => (
+            <a href={`/blog/${post.slug}`}>
+              <BlogCard post={post} client:visible />
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+
+  <Footer client:only="react" />
+</Layout>
