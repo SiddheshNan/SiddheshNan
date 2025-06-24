@@ -72,34 +72,28 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {[
-                "experience",
-                "skills",
-                "projects",
-                "awards",
-                "education",
-                "blog",
-                "contact",
-              ].map((item, index) => (
-                <motion.a
-                  key={item}
-                  href={item === "blog" ? "/blog" : `#${item}`}
-                  className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
-                  onClick={toggleMenu}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.2, delay: index * 0.1 }}
-                >
-                  {item === "experience" && "💼 "}
-                  {item === "skills" && "🛠️ "}
-                  {item === "projects" && "🚀 "}
-                  {item === "awards" && "🏆 "}
-                  {item === "education" && "🎓 "}
-                  {item === "blog" && "📝 "}
-                  {item === "contact" && "📬 "}
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
-                </motion.a>
-              ))}
+              {["experience", "skills", "projects", "blog", "contact"].map(
+                (item, index) => (
+                  <motion.a
+                    key={item}
+                    href={item.includes("blog") ? "/blog" : `/#${item}`}
+                    className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
+                    onClick={toggleMenu}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.2, delay: index * 0.1 }}
+                  >
+                    {item === "experience" && "💼 "}
+                    {item === "skills" && "🛠️ "}
+                    {item === "projects" && "🚀 "}
+                    {/* {item === "awards" && "🏆 "}
+                  {item === "education" && "🎓 "} */}
+                    {item === "blog" && "📝 "}
+                    {item === "contact" && "📬 "}
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </motion.a>
+                )
+              )}
             </nav>
           </motion.div>
         )}
