@@ -16,7 +16,7 @@ export const workExperience = [
     position: "Software Engineer",
     period: "Aug 2023 - Present",
     achievements: [
-      "Working as a Full-Stack Developer, managing both architectural and development responsibilities.",
+      "Working as a full-stack developer, contributing to system design and delivery of applications.",
       "<b>Designed and architected</b> a computer vision-based product to optimize performance and efficient communication across both monolithic and microservice architectures, <b>achieving a 40% reduction in processing time</b>.",
       "Developed and maintained backend and frontend systems for multiple projects.",
       "Created and deployed cloud-native applications, alongside few desktop applications.",
