@@ -1,81 +1,79 @@
-
-# Hi There! <img src="https://raw.githubusercontent.com/SiddheshNan/SiddheshNan/main/assets/img/wave.gif" width="30px" height="30px"  style="height:30px;width:30px;display:block;"> Nice to meet you :)
-
-#### 👨‍💻 My name is Siddhesh Nandurkar and I'm Senior Software Engineer at Intelimek LLC, Pune.
-
-<!-- #### 💻 As a skilled IoT developer, I have a passion for creating innovative solutions that improve efficiency and drive business value. With my experience in Web and IoT, I have a strong foundation in the technical skills required to design and develop robust IoT systems. I am always looking for new challenges and opportunities to grow and make a positive impact in the industry." -->
-
-<!-- #### 📍 I'm from <b>Pune, MH, India</b> <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" width="13"/>  -->
-
-<!-- I'm currently studying in final year at Sipna College of Engineering & Technology 🏫 pursuing a bachelor's degree in Information Technology 🎓 -->
-
-#### 📫 How to reach me: on Email [hello@siddhesh.me](mailto:hello@siddhesh.me), on [LinkedIn](https://www.linkedin.com/in/siddheshnan/), or on Twitter [@SiddheshNan](https://twitter.com/SiddheshNan)
-
-<!-- INTRO_END -->
-#### ⚡ Read more about my projects at [siddhesh.me](https://siddhesh.me/) 💡
+<h1 align="center">Hi there! 👋 I'm Siddhesh Nandurkar</h1>
 
 
-## 🔧 Technologies & Tools
 
-### 🔥 Programming Languages
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img alt="GoLang" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-<!--  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /> -->
+---
+
+🎯 I’m a Full-Stack Developer with ~2 years of professional experience and 3.5+ years of freelance development.  
+I specialize in building **production-grade applications** with modern stacks, cloud-native architectures, and real-world problem-solving.
+
+🌍 Based in Pune, India — currently working at Intelimek Systems, Pune.
+
+📫 Reach me at [sid@siddhesh.me](mailto:sid@siddhesh.me) • [LinkedIn](https://www.linkedin.com/in/siddheshnan) • [Twitter](https://twitter.com/SiddheshNan)
+
+---
+<!-- 
+## 🚀 Key Projects
+
+- 🔧 [**ThingESP**](https://thingesp.com): An IoT platform to control devices via WhatsApp (10,000+ users globally)
+- 🏥 [**Medor Club**](https://medor.club): A healthcare platform connecting patients and doctors via real-time apps
+- 📩 [PUC Reminder Platform](https://puc.siddhesh.me): Sends automated WhatsApp reminders for PUC expiry
+
+Explore more at 👉 [https://siddhesh.me](https://siddhesh.me)
+
+--- -->
+
+## 🧰 Tech Stack
+
+### 💻 Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007acc?style=for-the-badge&logo=typescript&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+
+### ⚙️ Backend
+![Flask](https://img.shields.io/badge/Flask-000?style=for-the-badge&logo=flask)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404d59?style=for-the-badge)
+
+### 🖥 Frontend
+![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-38b2ac?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### 🗃️ Databases
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+### ☁️ Cloud & DevOps
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI/CD-0A0A0A?style=for-the-badge&logo=github-actions&logoColor=white)
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&layout=compact&theme=tokyonight&hide_border=true&hide=css,html" />
 </p>
 
-
-### ✨ Frameworks 
-<p>
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img alt="NodeJs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img alt="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img alt="Svelte" src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00" />
-<!--  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" /> -->
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SiddheshNan&theme=tokyonight&hide_border=true" />
 </p>
 
+---
 
- ### 📊 Database 
-<p>
-  <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img alt="Redis" src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white" />
-</p>
+## 🗣 Let's Connect
 
+- 🌐 Website: [https://siddhesh.me](https://siddhesh.me)
+- 📬 Email: [sid@siddhesh.me](mailto:sid@siddhesh.me)
+- 💼 LinkedIn: [Siddhesh Nandurkar](https://www.linkedin.com/in/siddheshnan)
 
-### ☁ Cloud
-<p>
-  <img alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" />
-  <img alt="DigitalOcean" src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white" />
-  <img alt="Heroku" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
-</p>
+---
 
-
-### ⚙️ Tools
-<p>
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
-</p>
-
-
-
-
-## &#x1f4c8; GitHub Stats
-<a href="https://github.com/SiddheshNan">
-<div align="center">
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SiddheshNan&theme=tokyonight&show_icons=true" />
-  <img height="180em" style="margin-left:30px;display:block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SiddheshNan&theme=tokyonight&layout=compact&hide=html,css,asl,php,scss" />
-  </div>
-  
-  
-<div align="center">
-  <img height="180em" style="max-width:100%;" src="https://github-readme-streak-stats.herokuapp.com?user=siddheshnan&theme=tokyonight">
-</div>
-  
-</a>
-
+⭐ *Thanks for visiting my profile! Feel free to check out my pinned repos and star anything you find interesting.*

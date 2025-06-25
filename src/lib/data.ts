@@ -16,7 +16,7 @@ export const workExperience = [
     position: "Software Engineer",
     period: "Aug 2023 - Present",
     achievements: [
-      "Worked as a Full-Stack Developer, managing both architectural and development responsibilities.",
+      "Working as a Full-Stack Developer, managing both architectural and development responsibilities.",
       "<b>Designed and architected</b> a computer vision-based product to optimize performance and efficient communication across both monolithic and microservice architectures, <b>achieving a 40% reduction in processing time</b>.",
       "Developed and maintained backend and frontend systems for multiple projects.",
       "Created and deployed cloud-native applications, alongside few desktop applications.",
@@ -31,7 +31,7 @@ export const workExperience = [
     position: "Freelance Software Developer",
     period: "Oct 2019 - Jul 2023",
     achievements: [
-      "Gained hands on experience in developing frontend and backend systems using Python/Flask, React JS, and Node JS.",
+      "Gained hands-on experience in developing frontend and backend systems using Python/Flask, React JS, and Node JS.",
       "Integrated IoT and computer-vision based solutions with web dashboards for real-time interactions.",
       "Deployed web applications on the AWS cloud.",
       "Built android applications using React Native.",
@@ -48,9 +48,7 @@ export const education = [
     period: "2019 - 2023",
     cgpa: "8.93 / 10",
     achievements: [
-      // "President of the Department of Information Technology",
-      // "G20 student delegate",
-      "Organized technical workshops and events.",
+      "Organized various technical workshops and events.",
       "Represented the college in multiple national hackathons and won.",
       "Core Team Member - College Gathering (Umang 2023).",
       "Contributed to organizing cultural events and also developed the official Umang 2023 website.",
