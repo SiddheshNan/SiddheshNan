@@ -52,6 +52,9 @@ export const education = [
       // "G20 student delegate",
       "Organized technical workshops and events.",
       "Represented the college in multiple national hackathons and won.",
+      "Core Team Member - College Gathering (Umang 2023).",
+      "Contributed to organizing cultural events and also developed the official Umang 2023 website.",
+      "Designed and developed the college tech fest (Vidyotan 2019) website for event information and participant registration.",
     ],
   },
 ];
@@ -76,7 +79,15 @@ export const skills = {
   ],
   backendDevelopment: ["Flask", "Node.js", "Express.js", "FastAPI"],
   databaseAndStorage: ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
-  cloudAndDevOps: ["AWS", "Azure", "Docker", "Kubernetes", "Git", "CI/CD"],
+  cloudAndDevOps: [
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "Nginx",
+    "CI/CD",
+  ],
   // toolsAndServices: [
   //   "Clerk (Auth)",
   //   "Sanity (CMS)",
@@ -114,11 +125,26 @@ export const projects = [
   },
 
   {
+    title: "ThingCtrl - A Platform to Control IoT Devices",
+    github: "https://thingctrl.siddhesh.me",
+    description: [
+      "Developed a platform to monitor and control IoT devices (Raspberry Pi, Arduino, ESP32, ESP8266) through a real-time web dashboards.",
+      "Implemented drag-and-drop widgets and live device data using React.js, REST APIs, and WebSockets.",
+      "Built backend using Node.js and Express with MQTT and Redis for device messaging and performance.",
+      "Created client libraries in C++ (Arduino) and Python (Raspberry Pi) for seamless integration.",
+      "Containerized and deployed using Docker for scalable and portable deployment.",
+      "Technology Stack: MERN Stack, MQTT, Redis, Protocol Buffers, WebSockets, Docker.",
+    ],
+  },
+
+  {
     title: "PUC Vendor Management Platform",
     github: "https://puc.siddhesh.me",
     description: [
       "A platform built for PUC vendors to manage clients and send automated reminders of PUC expiry to vehicle owners via SMS and WhatsApp.",
       "Implemented core features including client database management, reminder scheduling, and messaging integration.",
+      "Developed a user-friendly dashboard for vendors to track client PUC status and send notifications.",
+      "Integrated WhatsApp Business API and Twilio for automated messaging.",
       "Technology Stack: MERN Stack, Microservices, WhatsApp Business API, and Docker.",
     ],
   },
