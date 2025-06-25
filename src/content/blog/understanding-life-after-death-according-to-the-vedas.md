@@ -1,5 +1,5 @@
 ---
-title: "Understanding Life After Death according to the Vedas"
+title: "Understanding Life After Death according to Vedas"
 image: "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGxpZmV8ZW58MHx8fHwxNjY2NjM5MDQ0&ixlib=rb-4.0.3&q=80&w=2000"
 date: 2022-10-13T00:47:00+05:30 	
 author: "Siddhesh N"
