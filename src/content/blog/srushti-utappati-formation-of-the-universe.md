@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?crop=entrop
 date: 2022-08-09T07:29:00+05:30
 author: "Siddhesh N"
 tags: ["Sankhya", "Yoga", "Philosophy", "Universe"]
-draft: false
+draft: true
 ---
 
 In Sankhya philosophy, Acharya Kapila Mahamuni has described 24 principles that are involved in the formation of the Universe. These are -- Avyakta, Mahat, Ahankara, Mind, 5 Sense faculties, 5 Motor faculties, 5 Great elements, and 5 Tanmatras.
