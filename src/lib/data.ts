@@ -13,7 +13,7 @@ export const workExperience = [
     company: "Intelimek Systems, Pune",
     link: "https://intelimek.com",
     location: "Hybrid",
-    position: "Software Engineer",
+    position: "Senior Software Engineer",
     period: "Aug 2023 - Present",
     achievements: [
       "Working as a full-stack developer, contributing to system design and delivery of applications.",
@@ -48,11 +48,10 @@ export const education = [
     period: "2019 - 2023",
     cgpa: "8.93 / 10",
     achievements: [
+      "Represented the college in multiple national and university hackathons and won.",
       "Organized various technical workshops and events.",
-      "Represented the college in multiple national hackathons and won.",
-      "Core Team Member - College Gathering (Umang 2023).",
-      "Contributed to organizing cultural events and also developed the official Umang 2023 website.",
-      "Designed and developed the college tech fest (Vidyotan 2019) website for event information and participant registration.",
+      "Core team member in college gathering - contributed to organizing cultural events.",
+      "Designed and developed the college tech fest website for event information and participant registration.",
     ],
   },
 ];
