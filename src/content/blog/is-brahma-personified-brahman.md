@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1631879742133-a0dd6180abf9?crop=entrop
 date: 2023-11-16T01:01:00+05:30 	
 author: "Siddhesh N"
 tags: ["Brahman", "Lord Brahma"]
-draft: true
+draft: false
 ---
 
 There are statements from the scriptures which strongly suggest that Brahma is the personified Brahman.

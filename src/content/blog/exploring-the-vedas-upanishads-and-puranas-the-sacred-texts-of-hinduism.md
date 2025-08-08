@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1491841651911-c44c30c34548?crop=entrop
 date: 2022-12-15T03:37:00+05:30 	
 author: "Siddhesh N"
 tags: ["Vedas", "Puranas", "Upanishads"]
-draft: true
+draft: false
 ---
 
 Sanskrit texts are an important part of Hinduism and have played a significant role in the development and evolution of this religion. The Vedas, Upanishads, and Puranas are three of the most well-known and influential of these texts.

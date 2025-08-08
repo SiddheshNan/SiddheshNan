@@ -4,7 +4,7 @@ image: "/blog-static/brahmapureeswarar.jpg"
 date: 2024-01-13T15:51:00+05:30 	
 author: "Siddhesh N"
 tags: ["Lord Brahma", "Tirupattur", "Destiny"]
-draft: true
+draft: false
 ---
 
 This ancient temple with intense positive vibes is located 25 km from the Chennai-Tiruchirappalli highway in a village called Siruganur. From this village, you have to travel a further 5 km down to a tiny hamlet called "Thirupattur" where the ancient temple of Lord Brahma is located. It is widely believed that this is one temple that can change your destiny.

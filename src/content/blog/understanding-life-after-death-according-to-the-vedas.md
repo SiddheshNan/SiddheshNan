@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?crop=entrop
 date: 2022-10-13T00:47:00+05:30 	
 author: "Siddhesh N"
 tags: ["Vedas", "Life"]
-draft: true
+draft: false
 ---
 
 I realize that my words would be tough to comprehend, the ideas which I bring would be tough to think of. Because, am talking about the passage to the "root" of the perplexing question of humanity, and its solution. And Vedas never tell this directly, and they purposely impel you to think.

@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?crop=entrop
 date: 2022-08-02T07:13:00+05:30
 author: "Siddhesh N"
 tags: ["Moksha", "Advaita", "Liberation"]
-draft: true
+draft: false
 ---
 
 Though there are many sampradayas in India, many religions, they can all be classified as either dualism or monism. Dualism mukti means entering Vaikuntha and associating with Bhagavan...as in personalism; Monism means merging into the formless impersonal brahma-jyoti. In the Brahmajyoti there is nothing...no you, no God, NOTHING.

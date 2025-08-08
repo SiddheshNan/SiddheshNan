@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?crop=entrop
 date: 2022-10-26T19:37:00+05:30 	
 author: "Siddhesh N"
 tags: ["Mann", "Chitta", "Buddhi"]
-draft: true
+draft: false
 ---
  
 In Vedic psychology, the mind isn't viewed as a single entity but as distinct faculties with specific functions.  Understanding the difference between Manas (Mann), Chitta, and Buddhi offers profound insights into our consciousness and provides a roadmap for spiritual growth.

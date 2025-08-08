@@ -10,9 +10,9 @@ import GlassHeader from "@/components/GlassHeader";
 import Footer from "@/components/Footer";
 
 export async function getStaticPaths() {
-  // Get all non-draft blog posts in production, or all posts in development
+  // Get all non-draft blog posts
   const posts = await getCollection("blog", ({ data }) => {
-    return import.meta.env.PROD ? !data.draft : true;
+    return !data.draft;
   });
 
   return posts.map((post) => ({
@@ -28,7 +28,7 @@ interface Props {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
-const { title, description, date, updatedDate, image, tags } = post.data;
+const { title, description, date, updatedDate, image, tags, draft } = post.data;
 ---
 
 <Layout
