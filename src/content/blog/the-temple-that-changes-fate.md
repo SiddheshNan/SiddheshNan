@@ -1,7 +1,7 @@
 ---
 title: "The Temple that Changes Fate"
 image: "/blog-static/brahmapureeswarar.jpg"
-date: 2020-01-13T15:51:00+05:30 	
+date: 2024-01-13T15:51:00+05:30 	
 author: "Siddhesh N"
 tags: ["Lord Brahma", "Tirupattur", "Destiny"]
 draft: false
