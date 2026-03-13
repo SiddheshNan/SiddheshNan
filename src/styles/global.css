@@ -39,37 +39,37 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.12 0.015 250);
+  --foreground: oklch(0.92 0 0);
+  --card: oklch(0.16 0.015 250);
+  --card-foreground: oklch(0.92 0 0);
+  --popover: oklch(0.16 0.015 250);
+  --popover-foreground: oklch(0.92 0 0);
+  --primary: oklch(0.71 0.2 270);
+  --primary-foreground: oklch(0.12 0.015 250);
+  --secondary: oklch(0.22 0.015 250);
+  --secondary-foreground: oklch(0.92 0 0);
+  --muted: oklch(0.22 0.015 250);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.22 0.015 250);
+  --accent-foreground: oklch(0.92 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.71 0.2 270);
+  --chart-1: oklch(0.71 0.2 270);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar: oklch(0.16 0.015 250);
+  --sidebar-foreground: oklch(0.92 0 0);
+  --sidebar-primary: oklch(0.71 0.2 270);
+  --primary-foreground: oklch(0.12 0.015 250);
+  --sidebar-accent: oklch(0.22 0.015 250);
+  --sidebar-accent-foreground: oklch(0.92 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-ring: oklch(0.71 0.2 270);
 }
 
 @theme inline {
@@ -121,4 +121,64 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* ─── Cara Theme: Floating geometric shapes animations ─── */
+@keyframes caraUpDown {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(30px); }
+}
+
+@keyframes caraUpDownWide {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(200px); }
+}
+
+.cara-float {
+  animation: caraUpDown 4s ease-in-out infinite alternate;
+}
+
+.cara-float-wide {
+  animation: caraUpDownWide 18s ease-in-out infinite alternate;
+}
+
+/* ─── Cara Theme: Diagonal section dividers ─── */
+.section-clip-top {
+  clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+  padding-top: calc(60px + 3rem);
+  margin-top: -60px;
+}
+
+.section-clip-both {
+  clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0 100%);
+  padding-top: calc(60px + 3rem);
+  padding-bottom: calc(60px + 3rem);
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+/* ─── Cara Theme: Gradient project cards ─── */
+.cara-project-card {
+  width: 100%;
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px -5px rgba(0,0,0,0.3);
+}
+
+.cara-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -5px rgba(0,0,0,0.4);
+}
+
+/* ─── Cara Theme: section with geometric background overlay ─── */
+.cara-section {
+  position: relative;
+  overflow: hidden;
 }

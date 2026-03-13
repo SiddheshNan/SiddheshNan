@@ -122,14 +122,14 @@ export default function ContactSection() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 relative">
             {/* Contact Information Card */}
-            <div className="lg:col-span-2 rounded-2xl border border-purple-500/20 p-8 bg-card/40 backdrop-blur-xl shadow-lg shadow-purple-500/5 transform hover:scale-[1.01] transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <div className="lg:col-span-2 rounded-2xl border border-indigo-500/20 p-8 bg-card/40 backdrop-blur-xl shadow-lg shadow-indigo-500/5 transform hover:scale-[1.01] transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-violet-500 bg-clip-text text-transparent">
                 Contact Information
               </h3>
 
               <div className="space-y-6 text-foreground/80">
                 <div className="flex items-center group">
-                  <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center mr-4 group-hover:bg-purple-500/20 transition-colors duration-300">
+                  <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mr-4 group-hover:bg-indigo-500/20 transition-colors duration-300">
                     <span className="text-xl">📍</span>
                   </div>
                   <div>
@@ -138,14 +138,14 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-center group">
-                  <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center mr-4 group-hover:bg-purple-500/20 transition-colors duration-300">
+                  <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mr-4 group-hover:bg-indigo-500/20 transition-colors duration-300">
                     <span className="text-xl">📧</span>
                   </div>
                   <div>
                     <p className="text-sm text-foreground/60">Email</p>
                     <a
                       href="mailto:sid@siddhesh.me"
-                      className="font-medium text-purple-500 hover:text-purple-600 transition-colors"
+                      className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors"
                     >
                       sid@siddhesh.me
                     </a>
@@ -160,10 +160,10 @@ export default function ContactSection() {
                       href="https://github.com/SiddheshNan"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-card/80 hover:bg-purple-500/10 border border-border/20 hover:border-purple-500/30 shadow-sm hover:shadow-md transition-all duration-300 group"
+                      className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-card/80 hover:bg-indigo-500/10 border border-border/20 hover:border-indigo-500/30 shadow-sm hover:shadow-md transition-all duration-300 group"
                     >
                       <svg
-                        className="w-5 h-5 text-foreground/70 group-hover:text-purple-500 transition-colors"
+                        className="w-5 h-5 text-foreground/70 group-hover:text-indigo-400 transition-colors"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -174,7 +174,7 @@ export default function ContactSection() {
                       >
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                       </svg>
-                      <span className="font-medium text-foreground/70 group-hover:text-purple-500 transition-colors">
+                      <span className="font-medium text-foreground/70 group-hover:text-indigo-400 transition-colors">
                         GitHub
                       </span>
                     </a>
@@ -182,10 +182,10 @@ export default function ContactSection() {
                       href="https://linkedin.com/in/siddheshnan"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-card/80 hover:bg-purple-500/10 border border-border/20 hover:border-purple-500/30 shadow-sm hover:shadow-md transition-all duration-300 group"
+                      className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-card/80 hover:bg-indigo-500/10 border border-border/20 hover:border-indigo-500/30 shadow-sm hover:shadow-md transition-all duration-300 group"
                     >
                       <svg
-                        className="w-5 h-5 text-foreground/70 group-hover:text-purple-500 transition-colors"
+                        className="w-5 h-5 text-foreground/70 group-hover:text-indigo-400 transition-colors"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -198,7 +198,7 @@ export default function ContactSection() {
                         <rect x="2" y="9" width="4" height="12"></rect>
                         <circle cx="4" cy="4" r="2"></circle>
                       </svg>
-                      <span className="font-medium text-foreground/70 group-hover:text-purple-500 transition-colors">
+                      <span className="font-medium text-foreground/70 group-hover:text-indigo-400 transition-colors">
                         LinkedIn
                       </span>
                     </a>
@@ -208,8 +208,8 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form Card */}
-            <div className="lg:col-span-3 rounded-2xl border border-purple-500/20 p-8 bg-card/40 backdrop-blur-xl shadow-lg shadow-purple-500/5">
-              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <div className="lg:col-span-3 rounded-2xl border border-indigo-500/20 p-8 bg-card/40 backdrop-blur-xl shadow-lg shadow-indigo-500/5">
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-violet-500 bg-clip-text text-transparent">
                 Send a Message
               </h3>
 
@@ -234,7 +234,7 @@ export default function ContactSection() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Enter your name"
-                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 transition-all duration-200"
+                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-200"
                         required
                         maxLength={64}
                       />
@@ -256,7 +256,7 @@ export default function ContactSection() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email"
-                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 transition-all duration-200"
+                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-200"
                         required
                         maxLength={64}
                       />
@@ -272,7 +272,7 @@ export default function ContactSection() {
                     </label>
                     <div className="relative">
                       <textarea
-                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 transition-all duration-200"
+                        className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-200"
                         placeholder="Write your message here..."
                         name="msg"
                         id="msg"
@@ -294,7 +294,7 @@ export default function ContactSection() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="px-6 py-2.5 cursor-pointer bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-70"
+                    className="px-6 py-2.5 cursor-pointer bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-70"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center">
@@ -344,8 +344,8 @@ export default function ContactSection() {
           </div>
 
           {/* Background decoration */}
-          <div className="absolute -z-10 top-1/2 left-1/4 w-64 h-64 bg-purple-500/20 rounded-full filter blur-3xl opacity-30"></div>
-          <div className="absolute -z-10 bottom-1/4 right-1/4 w-72 h-72 bg-pink-500/20 rounded-full filter blur-3xl opacity-30"></div>
+          <div className="absolute -z-10 top-1/2 left-1/4 w-64 h-64 bg-indigo-500/15 rounded-full filter blur-3xl opacity-30"></div>
+          <div className="absolute -z-10 bottom-1/4 right-1/4 w-72 h-72 bg-violet-500/15 rounded-full filter blur-3xl opacity-30"></div>
         </motion.div>
       </div>
     </section>

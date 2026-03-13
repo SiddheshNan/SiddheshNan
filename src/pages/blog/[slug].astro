@@ -72,7 +72,7 @@ const { title, description, date, updatedDate, image, tags, draft } = post.data;
         <span class="text-foreground/50">|</span>
         <span>
           Author:
-          <a href="/" class="text-purple-500 hover:text-purple-600">
+          <a href="/" class="text-indigo-400 hover:text-indigo-300">
             Siddhesh Nandurkar
           </a>
         </span>
@@ -83,7 +83,7 @@ const { title, description, date, updatedDate, image, tags, draft } = post.data;
           tags.map((tag) => (
             <a
               href={`/blog/tag/${tag}`}
-              class="inline-flex items-center rounded-full bg-purple-600 text-white px-2 py-1 text-xs font-medium  transition-colors "
+              class="inline-flex items-center rounded-full bg-indigo-500/80 text-white px-2 py-1 text-xs font-medium backdrop-blur-sm transition-colors hover:bg-indigo-500"
             >
               {tag}
             </a>
@@ -103,7 +103,7 @@ const { title, description, date, updatedDate, image, tags, draft } = post.data;
       class="inline-flex items-center ml-3
        px-4 py-2 rounded-full
       text-md font-medium transition-colors
-      text-white bg-purple-500 hover:bg-purple-800"
+      text-white bg-indigo-500 hover:bg-indigo-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -14,7 +14,6 @@ type BlogCardProps = {
       [key: string]: any;
     };
     slug: string;
-    // Add other properties if needed
   };
   className?: string;
 };
@@ -26,30 +25,30 @@ export default function BlogCard({ post, className }: BlogCardProps) {
   return (
     <motion.div
       className={cn(
-        "group flex flex-col overflow-hidden rounded-lg border border-border/40 bg-card/30 backdrop-blur-md transition-all hover:shadow-md",
+        "group flex flex-col overflow-hidden rounded-lg border border-border/40 bg-card/40 backdrop-blur-md transition-all hover:shadow-lg hover:border-indigo-500/20",
         className
       )}
-      
+      whileHover={{ y: -4, transition: { duration: 0.2 } }}
     >
       {frontmatter.image && (
         <div className="relative h-48 w-full overflow-hidden">
           <img
             src={frontmatter.image}
             alt={frontmatter.title}
-            className="h-full w-full object-cover transition-transform duration-100 group-hover:scale-101"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 text-white bg-re">
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
             <div className="flex flex-wrap gap-2">
               {frontmatter.tags.slice(0, 3).map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center rounded-full bg-purple-600 px-2 py-1 text-xs font-medium text-white"
+                  className="inline-flex items-center rounded-full bg-indigo-500/80 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm"
                 >
                   {tag}
                 </span>
               ))}
               {frontmatter.tags.length > 3 && (
-                <span className="inline-flex items-center rounded-full bg-purple-600 px-2 py-1 text-xs font-medium text-white">
+                <span className="inline-flex items-center rounded-full bg-indigo-500/80 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
                   +{frontmatter.tags.length - 3}
                 </span>
               )}
@@ -58,11 +57,11 @@ export default function BlogCard({ post, className }: BlogCardProps) {
         </div>
       )}
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="mb-2 line-clamp-2 text-xl font-semibold">{frontmatter.title}</h3>
+        <h3 className="mb-2 line-clamp-2 text-xl font-semibold group-hover:text-indigo-400 transition-colors">{frontmatter.title}</h3>
         <p className="mb-4 line-clamp-3 flex-1 text-sm text-foreground/70">{frontmatter.description}</p>
         <div className="mt-auto flex items-center justify-between">
           <span className="text-xs text-foreground/60">{formatDate(date)}</span>
-          <span className="text-sm font-medium text-purple-500">Read more →</span>
+          <span className="text-sm font-medium text-indigo-400 group-hover:text-indigo-300 transition-colors">Read more →</span>
         </div>
       </div>
     </motion.div>

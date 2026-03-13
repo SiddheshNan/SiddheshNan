@@ -79,7 +79,7 @@ export default function BlogPreviewSection({
                 setError(null);
                 fetchPosts();
               }}
-              className="px-4 py-2 bg-purple-500/10 text-purple-500 rounded-full hover:bg-purple-500/20 transition-colors"
+              className="px-4 py-2 bg-indigo-500/10 text-indigo-400 rounded-full hover:bg-indigo-500/20 transition-colors"
             >
               Try again
             </button>
@@ -90,7 +90,7 @@ export default function BlogPreviewSection({
               <motion.a
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group flex flex-col h-64 overflow-hidden rounded-lg border border-border/40 bg-card/30 backdrop-blur-md transition-all hover:shadow-md"
+                className="group flex flex-col h-64 overflow-hidden rounded-lg border border-border/40 bg-card/40 backdrop-blur-md transition-all hover:shadow-lg hover:border-indigo-500/20 hover:-translate-y-1"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -117,7 +117,7 @@ export default function BlogPreviewSection({
                     <span className="text-xs text-foreground/60">
                       {formatDate(new Date(post.data.date))}
                     </span>
-                    <span className="text-sm font-medium text-purple-500">
+                    <span className="text-sm font-medium text-indigo-400">
                       Read more →
                     </span>
                   </div>
@@ -138,7 +138,7 @@ export default function BlogPreviewSection({
         >
           <a
             href="/blog"
-            className="inline-flex items-center rounded-full bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-500 transition-colors hover:bg-purple-500/20"
+            className="inline-flex items-center rounded-full bg-indigo-500/10 px-4 py-2 text-sm font-medium text-indigo-400 transition-colors hover:bg-indigo-500/20"
           >
             View all articles →
           </a>

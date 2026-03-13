@@ -100,6 +100,7 @@ export const projects = [
   {
     title: "ThingESP - A WhatsApp Automation Platform",
     github: "https://thingesp.siddhesh.me",
+    tags: ["IoT", "MERN", "AWS", "MQTT", "Docker"],
     description: [
       "ThingESP, a platform that enables users to automate and control IoT devices via WhatsApp.",
       "It is a live/production application and has established a user base of ~10K users worldwide.",
@@ -111,6 +112,7 @@ export const projects = [
   {
     title: "Medor Club - The Healthcare Platform",
     github: "https://medor.club",
+    tags: ["React Native", "MERN", "AWS", "Razorpay"],
     description: [
       "Medor is a digital healthcare platform that connects patients with doctors for consultations.",
       "Developed cross-platform apps for users and doctors and published them on Google Play Store.",
@@ -124,6 +126,7 @@ export const projects = [
   {
     title: "ThingCtrl - A Platform to Control IoT Devices",
     github: "https://thingctrl.siddhesh.me",
+    tags: ["IoT", "WebSockets", "MQTT", "Docker"],
     description: [
       "Developed a platform to monitor and control IoT devices (Raspberry Pi, Arduino, ESP32, ESP8266) through a real-time web dashboards.",
       "Implemented drag-and-drop widgets and live device data using React.js, REST APIs, and WebSockets.",
@@ -137,6 +140,7 @@ export const projects = [
   {
     title: "PUC Vendor Management Platform",
     github: "https://puc.siddhesh.me",
+    tags: ["MERN", "WhatsApp API", "Twilio", "Docker"],
     description: [
       "A platform built for PUC vendors to manage clients and send automated reminders of PUC expiry to vehicle owners via SMS and WhatsApp.",
       "Implemented core features including client database management, reminder scheduling, and messaging integration.",

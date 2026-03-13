@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-purple-500/10 py-6 bg-gradient-to-b from-background to-muted/20 backdrop-blur-sm">
+    <footer className="border-t border-indigo-500/10 py-6 bg-gradient-to-b from-background to-muted/20 backdrop-blur-sm">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-center text-center"
@@ -14,8 +14,7 @@ export default function Footer() {
           <motion.p
             className="text-sm text-muted-foreground text-center mx-auto"
           >
-            &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved. ✨
+            &copy; {new Date().getFullYear()} - {personalInfo.name}.
           </motion.p>
           {/* <motion.p
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"

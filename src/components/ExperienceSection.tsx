@@ -3,14 +3,16 @@ import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import FloatingShapes, { ABOUT_SHAPES } from "./FloatingShapes";
 
 export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="pt-12 pb-6 bg-gradient-to-b from-muted/20 to-background"
+      className="pt-12 pb-6 bg-background relative cara-section overflow-hidden"
     >
-      <div className="container max-w-4xl mx-auto px-6 md:px-4">
+      <FloatingShapes shapes={ABOUT_SHAPES} />
+      <div className="container max-w-4xl mx-auto px-6 md:px-4 relative z-10">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
             <motion.span
@@ -39,15 +41,15 @@ export default function ExperienceSection() {
               isCompany={true}
             >
               <motion.div
-                className="mt-3  p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/30 shadow-sm"
+                className="mt-3  p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-indigo-500/20 dark:bg-card/10 dark:border-indigo-500/20 shadow-sm"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
                 <div className="flex items-center mb-3">
-                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                    <Briefcase className="h-4 w-4 text-purple-500" />
+                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500/10 mr-2">
+                    <Briefcase className="h-4 w-4 text-indigo-400" />
                   </div>
                   <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>

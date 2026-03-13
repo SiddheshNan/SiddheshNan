@@ -65,7 +65,7 @@ const allTags = [...new Set(allPosts.map(post => post.data.tags).flat())];
       href="/blog"
       class="inline-flex items-center 
       px-4 py-2 rounded-full
-      text-md font-medium text-white bg-purple-500 hover:bg-purple-800"
+      text-md font-medium text-white bg-indigo-500 hover:bg-indigo-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const allTags = [...new Set(allPosts.map(post => post.data.tags).flat())];
       </div>
       
       <h1 class="text-4xl font-bold mb-6">
-        Articles tagged with <span class="text-purple-500">#{tag}</span>
+        Articles tagged with <span class="text-indigo-400">#{tag}</span>
       </h1>
       
       <p class="text-lg text-foreground/70 max-w-2xl">
@@ -102,7 +102,7 @@ const allTags = [...new Set(allPosts.map(post => post.data.tags).flat())];
             href={`/blog/tag/${t}`} 
             class={`inline-flex items-center rounded-full border px-3 py-1 text-sm transition-colors ${
               t === tag 
-                ? 'bg-purple-500 text-white border-purple-500' 
+                ? 'bg-indigo-500 text-white border-indigo-500' 
                 : 'border-border/40 bg-card/30 hover:bg-card/50 backdrop-blur-md'
             }`}
           >

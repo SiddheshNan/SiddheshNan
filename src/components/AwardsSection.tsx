@@ -21,14 +21,14 @@ export default function AwardsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {awards.map((award, index) => (
             <MotionWrapper key={award.name + award.date} delay={index * 0.1}>
-              <GlassCard className="p-4 dark:border-purple-500/10 hover:border-purple-500/30 transition-all duration-100 flex flex-col h-full">
+              <GlassCard className="p-4 dark:border-indigo-500/10 hover:border-indigo-500/30 transition-all duration-100 flex flex-col h-full">
                 <div className="flex items-center mb-3">
                   <motion.div
                     whileHover={{ rotate: 20 }}
                     transition={{ type: "spring", stiffness: 500 }}
-                    className="flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full p-1.5 mr-2"
+                  className="flex items-center justify-center bg-indigo-500/10 border border-indigo-500/20 rounded-full p-1.5 mr-2"
                   >
-                    <Trophy className="h-4 w-4 text-white" />
+                    <Trophy className="h-4 w-4 dark:text-white text-indigo-500" />
                   </motion.div>
                   <h3 className="font-medium">{award.name}</h3>
                 </div>
@@ -41,7 +41,7 @@ export default function AwardsSection() {
                       📅 {award.date}
                     </span>
                     <motion.span
-                      className="text-xs px-2 py-1 bg-purple-500/10 rounded-full"
+                      className="text-xs px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded-full"
                       whileHover={{ scale: 1.05 }}
                     >
                       {award.position}

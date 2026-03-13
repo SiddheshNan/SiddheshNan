@@ -38,7 +38,7 @@ export default function TimelineItem({
       {!cgpa && (
         <div className="flex flex-col items-center">
           <motion.div
-            className="flex h-[20px] w-[20px] items-center justify-center rounded-full border border-purple-500/50 bg-background dark:bg-muted z-10"
+            className="flex h-[20px] w-[20px] items-center justify-center rounded-full border border-indigo-500/50 bg-background dark:bg-muted z-10"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{
@@ -49,11 +49,11 @@ export default function TimelineItem({
             }}
             viewport={{ once: true, margin: "-50px" }}
           >
-            <div className="h-[10px] w-[10px] rounded-full bg-purple-500 dark:bg-purple-400" />
+            <div className="h-[10px] w-[10px] rounded-full bg-indigo-500 dark:bg-indigo-400" />
           </motion.div>
           {!isLast && (
             <motion.div
-              className="w-px grow bg-gradient-to-b from-purple-500/50 to-pink-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
+              className="w-px grow bg-gradient-to-b from-indigo-500/50 to-violet-500/30 dark:from-indigo-500/30 dark:to-violet-500/10"
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
               transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
@@ -79,7 +79,7 @@ export default function TimelineItem({
                   href={companyLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-500 underline ml-1 inline-flex items-center underline-offset-5 gap-1"
+                  className="hover:text-indigo-400 underline ml-1 inline-flex items-center underline-offset-5 gap-1"
                 >
                   {companyName}
                   <svg

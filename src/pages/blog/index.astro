@@ -29,33 +29,67 @@ const description =
 <Layout title={title} description={description}>
   <GlassHeader client:only="react" />
 
-  <main class="container max-w-4xl mx-auto px-4 py-12">
-    <section class="mb-12">
-      <h1 class="text-4xl font-bold mb-6">Siddhesh&#39;s Blog</h1>
-      <p class="text-lg text-foreground/70 max-w-2xl">
-        Siddhesh&#39;s Blog offers insightful explorations into ancient Indian
-        philosophy, delving into Vedic roots and spiritual wisdom for a deeper
-        understanding of life and existence.
-      </p>
+  <main class="min-h-screen relative overflow-hidden">
+    <!-- Cara-style hero section for blog -->
+    <section class="relative cara-section py-20 overflow-hidden"
+      style="background: linear-gradient(135deg, #0f0c29 0%, #1a1042 60%, #0f0c29 100%);">
+
+      <!-- Decorative geometric shapes (static CSS, no JS needed) -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 30 30" style="position:absolute;width:56px;left:8%;top:18%;color:#ed8936;fill:none;stroke:currentColor;opacity:0.7;" class="cara-float hidden md:block">
+          <polygon points="15,1 29,29 1,29" stroke-width="2"/>
+        </svg>
+        <svg viewBox="0 0 30 30" style="position:absolute;width:24px;left:88%;top:12%;color:#48bb78;fill:currentColor;opacity:0.5;" class="cara-float">
+          <circle cx="15" cy="15" r="15"/>
+        </svg>
+        <svg viewBox="0 0 30 30" style="position:absolute;width:48px;left:92%;top:60%;color:#e53e3e;fill:none;stroke:currentColor;opacity:0.6;" class="cara-float hidden md:block">
+          <polygon points="15,1 28,8 28,22 15,29 2,22 2,8" stroke-width="2"/>
+        </svg>
+        <svg viewBox="0 0 100 100" style="position:absolute;width:20px;left:25%;top:10%;color:#ed64a6;fill:none;stroke:currentColor;opacity:0.5;" class="cara-float-wide">
+          <line x1="20" y1="80" x2="80" y2="20" stroke-width="10"/>
+          <line x1="20" y1="20" x2="80" y2="80" stroke-width="10"/>
+        </svg>
+        <svg viewBox="0 0 30 30" style="position:absolute;width:64px;left:3%;top:80%;color:#805ad5;fill:currentColor;opacity:0.35;" class="hidden md:block">
+          <rect x="0" y="0" width="30" height="30"/>
+        </svg>
+        <svg viewBox="0 0 30 30" style="position:absolute;width:12px;left:72%;top:25%;color:#4a5568;fill:currentColor;opacity:0.7;" class="cara-float-wide">
+          <rect x="0" y="0" width="30" height="30"/>
+        </svg>
+        <svg viewBox="0 0 30 30" style="position:absolute;width:16px;left:50%;top:75%;color:#3182ce;fill:none;stroke:currentColor;opacity:0.6;" class="cara-float-wide hidden md:block">
+          <polygon points="15,1 28,8 28,22 15,29 2,22 2,8" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="container max-w-4xl mx-auto px-4 relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white"
+          style="text-shadow: rgba(255,255,255,0.15) 0px 5px 35px;">
+          Siddhesh&#39;s Blog
+        </h1>
+        <p class="text-lg text-white/70 max-w-2xl leading-relaxed">
+          Explorations into ancient Indian philosophy, Vedic roots and spiritual wisdom.
+        </p>
+      </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Tags</h2>
+    <!-- Tags section -->
+    <div class="container max-w-4xl mx-auto px-4 py-8">
+      <h2 class="text-xl font-semibold mb-4 text-foreground/80">Topics</h2>
       <div class="flex flex-wrap gap-2">
         {
           allTags.map((tag) => (
             <a
               href={`/blog/tag/${tag}`}
-              class="inline-flex items-center rounded-full border border-border/40 bg-card/30 px-3 py-1 text-sm backdrop-blur-md transition-colors hover:bg-card/50"
+              class="inline-flex items-center rounded-full border border-indigo-500/20 bg-indigo-500/5 px-3 py-1 text-sm text-indigo-400 backdrop-blur-md transition-colors hover:bg-indigo-500/15 hover:border-indigo-500/40"
             >
               {tag}
             </a>
           ))
         }
       </div>
-    </section>
+    </div>
 
-    <section class="mb-12">
+    <!-- Articles grid -->
+    <div class="container max-w-4xl mx-auto px-4 pb-16">
       <h2 class="text-2xl font-semibold mb-6">Latest Articles</h2>
       <div class="grid gap-6 md:grid-cols-2">
         {
@@ -66,7 +100,7 @@ const description =
           ))
         }
       </div>
-    </section>
+    </div>
   </main>
 
   <Footer client:only="react" />

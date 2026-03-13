@@ -1,74 +1,88 @@
 import React from "react";
 import { projects } from "@/lib/data";
-import {
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { Github, Link } from "lucide-react";
-import { GlassCard } from "./ui/glass-card";
+import { ExternalLink, Github } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
+import FloatingShapes, { PROJECTS_SHAPES } from "./FloatingShapes";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-12 relative">
-      <div className="container max-w-4xl mx-auto px-6 md:px-4">
+    <section
+      id="projects"
+      className="py-20 relative cara-section section-clip-top overflow-hidden"
+      style={{
+        background: "linear-gradient(160deg, #1e1b4b 0%, #1e3a5f 100%)",
+      }}
+    >
+      <FloatingShapes shapes={PROJECTS_SHAPES} />
+
+      <div className="container max-w-4xl mx-auto px-6 md:px-4 relative z-10">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
+          <h2 className="text-3xl font-bold mb-10 text-white">
             🚀 Projects
           </h2>
         </MotionWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((project, index) => (
-            <MotionWrapper key={project.title} delay={index * 0.2}>
-              <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
-                <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <CardTitle className="text-center md:text-left ">
-                    <motion.a
+            <MotionWrapper key={project.title} delay={index * 0.1}>
+              <motion.div
+                className="flex flex-col h-full rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-200 hover:bg-white/10 hover:border-indigo-400/30 hover:shadow-lg hover:shadow-indigo-500/10 cursor-pointer"
+                whileHover={{ y: -4 }}
+                onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
+              >
+                <div className="flex flex-col h-full p-6">
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold text-white mb-2 leading-snug">
+                    {project.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-white/60 leading-relaxed line-clamp-3 flex-1 mb-4">
+                    {project.description[0]}
+                  </p>
+
+                  {/* Tags */}
+                  {project.tags && (
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {project.tags.slice(0, 3).map((tag: string) => (
+                        <span
+                          key={tag}
+                          className="text-xs px-2 py-0.5 bg-indigo-500/15 border border-indigo-500/20 rounded-full text-indigo-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Links */}
+                  <div className="flex items-center gap-4 mt-auto pt-4 border-t border-white/10">
+                    <a
                       href={project.github}
                       target="_blank"
-                      className="hover:text-purple-500 transition-colors duration-100"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1 }}
-                      whileTap={{ scale: 1 }}
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex items-center gap-1.5 text-xs text-white/50 hover:text-indigo-300 transition-colors"
                     >
-                      {project.title}
-                    </motion.a>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="list-disc ml-4 space-y-1 text-sm  duration-100 mt-4">
-                    {project.description.map((desc, i) => (
-                      <motion.li
-                        key={i}
-                        className="text-muted-foreground"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.1 }}
-                        viewport={{ once: true }}
+                      <ExternalLink className="h-3 w-3" />
+                      View Project
+                    </a>
+                    {project.github && (
+                      <a
+                        href={`https://github.com/SiddheshNan`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-1.5 text-xs text-white/50 hover:text-indigo-300 transition-colors"
                       >
-                        {desc}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
-                 
-                  >
-                    <Link className="h-4 w-4 mr-2 " />
-                    View Project
-                  </motion.a>
-                </CardFooter>
-              </GlassCard>
+                        <Github className="h-3 w-3" />
+                        GitHub
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
             </MotionWrapper>
           ))}
         </div>
