@@ -82,6 +82,19 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
+                 AI/ML & Computer Vision
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {skills.aiMlAndComputerVision.map((skill, index) => (
+                  <SkillTag key={skill} skill={skill} index={index} />
+                ))}
+              </div>
+            </GlassCard>
+          </motion.div>
+
+          <motion.div variants={skillCategoryVariants}>
+            <GlassCard className="p-4">
+              <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
                  Frontend Development
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
@@ -108,10 +121,10 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                 Database & Storage
+                 Database & Messaging
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                {skills.databaseAndStorage.map((skill, index) => (
+                {skills.databaseAndMessaging.map((skill, index) => (
                   <SkillTag key={skill} skill={skill} index={index} />
                 ))}
               </div>
