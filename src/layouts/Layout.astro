@@ -25,6 +25,14 @@ const { title, description } = Astro.props;
       rel="stylesheet"
     />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7GD5JT1VQ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G7GD5JT1VQ');
+    </script>
   </head>
   <body
     class="min-h-screen bg-background font-sans antialiased selection:bg-indigo-500/20 selection:text-indigo-400"
