@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?crop=entrop
 date: 2022-08-28T07:55:00+05:30
 author: "Siddhesh N"
 tags: ["AshtaSiddhi", "Hanuman"]
-draft: false
+draft: true
 ---
 Ashta siddhis are the eight divine knowledge that gives one complete power over each and everything. They are mentioned in Hindu scriptures and texts. However, the average people may not know about the siddhis unless you are immersed in Hindu religious knowledges. Most notably people hear about ashta siddhi is during hearing Hanuman Chalisa or Ganesh vajana, I also came to know about the term Ashta siddhi while reciting the hanuman chalisa.
 

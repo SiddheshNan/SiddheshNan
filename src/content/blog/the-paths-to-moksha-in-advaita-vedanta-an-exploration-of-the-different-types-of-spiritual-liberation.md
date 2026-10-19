@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1510148832187-bfeaf1fa16d7?crop=entrop
 date: 2022-12-27T07:00:00+05:30 	
 author: "Siddhesh N"
 tags: ["Moksha", "Advaita", "Vedanta"]
-draft: false
+draft: true
 ---
 
 **Jivanmukta**

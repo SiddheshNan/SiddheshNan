@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1631556373338-52e31188effc?crop=entrop
 date: 2022-08-28T07:55:00+05:30 
 author: "Siddhesh N"
 tags: ["Ganesh", "Ganpati", "Purana"]
-draft: false
+draft: true
 ---
 
 The Ganesha Purana is one of the ancient Indian Puranas that is devoted to Lord Ganesha, the Remover of Obstacles. The Hindu religious scripture is considered as an Upapurana that comprised of several compilations and was styled as a secondary Purana. 
