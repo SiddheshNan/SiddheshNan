@@ -30,8 +30,8 @@ export default function ExperienceSection() {
         <div className="mb-8">
           {workExperience.map((job, index) => (
             <TimelineItem
-              key={job.company + job.period}
-              title={`👨‍💻 ${job.position}`}
+              key={job.company}
+              title=""
               companyName={job.company}
               companyLink={job.link}
               subtitle={`🌍 ${job.location}`}
@@ -40,36 +40,58 @@ export default function ExperienceSection() {
               index={index}
               isCompany={true}
             >
-              <motion.div
-                className="mt-3  p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-indigo-500/20 dark:bg-card/10 dark:border-indigo-500/20 shadow-sm"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div className="flex items-center mb-3">
-                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500/10 mr-2">
-                    <Briefcase className="h-4 w-4 text-indigo-400" />
-                  </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
-                </div>
-                <ul className="list-none sm:ml-4 space-y-2 text-sm text-left">
-                  {job.achievements.map((achievement, i) => (
-                    <motion.li
-                      key={i}
-                      className="text-muted-foreground relative pl-6"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 * i }}
-                      viewport={{ once: true }}
-                    >
-                      <div
-                        dangerouslySetInnerHTML={{ __html: `• ${achievement}` }}
-                      ></div>
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
+              <div className="space-y-4">
+                {job.roles.map((role, roleIndex) => (
+                  <motion.div
+                    key={role.position + role.period}
+                    className="p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-indigo-500/20 dark:bg-card/10 dark:border-indigo-500/20 shadow-sm"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 + roleIndex * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex flex-wrap items-center gap-x-2 mb-3">
+                      <div className="h-6 w-6 flex items-center justify-center rounded-full bg-indigo-500/10">
+                        <Briefcase className="h-4 w-4 text-indigo-400" />
+                      </div>
+                      <h4 className="text-sm font-semibold">{role.position}</h4>
+                      <span className="text-sm text-muted-foreground">
+                        {role.period}
+                      </span>
+                    </div>
+                    <ul className="list-none sm:ml-4 space-y-2 text-sm text-left">
+                      {role.achievements.map((achievement, i) => (
+                        <motion.li
+                          key={i}
+                          className="text-muted-foreground relative pl-6"
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.3, delay: 0.1 * i }}
+                          viewport={{ once: true }}
+                        >
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: `• ${achievement}`,
+                            }}
+                          ></div>
+                        </motion.li>
+                      ))}
+                    </ul>
+                    {role.stack && (
+                      <div className="flex flex-wrap gap-1.5 mt-4 sm:ml-4">
+                        {role.stack.map((tech) => (
+                          <span
+                            key={tech}
+                            className="text-xs px-2 py-0.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-muted-foreground"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
             </TimelineItem>
           ))}
         </div>

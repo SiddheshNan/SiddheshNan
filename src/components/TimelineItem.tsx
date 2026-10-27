@@ -74,7 +74,7 @@ export default function TimelineItem({
           <h3 className="text-lg font-medium">
             {isCompany ? (
               <>
-                {title} @
+                {title ? `${title} @` : ""}
                 <a
                   href={companyLink}
                   target="_blank"

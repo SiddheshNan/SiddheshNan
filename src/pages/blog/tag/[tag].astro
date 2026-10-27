@@ -49,7 +49,7 @@ const allTags = [...new Set(allPosts.map(post => post.data.tags).flat())];
 ---
 
 <Layout title={title} description={description}>
-  <GlassHeader client:only="react" />
+  <GlassHeader client:load />
   
   <main class="container max-w-4xl mx-auto px-4 py-12">
     <section class="mb-12">
@@ -131,5 +131,5 @@ const allTags = [...new Set(allPosts.map(post => post.data.tags).flat())];
     </section>
   </main>
 
-  <Footer client:only="react" />
+  <Footer client:load />
 </Layout>

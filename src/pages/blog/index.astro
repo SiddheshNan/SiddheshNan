@@ -27,7 +27,7 @@ const description =
 ---
 
 <Layout title={title} description={description}>
-  <GlassHeader client:only="react" />
+  <GlassHeader client:load />
 
   <main class="min-h-screen relative overflow-hidden">
     <!-- Cara-style hero section for blog -->
@@ -103,5 +103,5 @@ const description =
     </div>
   </main>
 
-  <Footer client:only="react" />
+  <Footer client:load />
 </Layout>

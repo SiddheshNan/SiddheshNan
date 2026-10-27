@@ -29,7 +29,7 @@ export default function ProjectsSection() {
               <motion.div
                 className="flex flex-col h-full rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-200 hover:bg-white/10 hover:border-indigo-400/30 hover:shadow-lg hover:shadow-indigo-500/10 cursor-pointer"
                 whileHover={{ y: -4 }}
-                onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
+                onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}
               >
                 <div className="flex flex-col h-full p-6">
                   {/* Title */}
@@ -59,7 +59,7 @@ export default function ProjectsSection() {
                   {/* Links */}
                   <div className="flex items-center gap-4 mt-auto pt-4 border-t border-white/10">
                     <a
-                      href={project.github}
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
@@ -68,9 +68,9 @@ export default function ProjectsSection() {
                       <ExternalLink className="h-3 w-3" />
                       View Project
                     </a>
-                    {project.github && (
+                    {project.repo && project.repo !== project.link && (
                       <a
-                        href={`https://github.com/SiddheshNan`}
+                        href={project.repo}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}

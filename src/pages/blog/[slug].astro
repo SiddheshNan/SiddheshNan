@@ -35,7 +35,7 @@ const { title, description, date, updatedDate, image, tags, draft } = post.data;
   title={`${title} | Blog | Siddhesh Nandurkar`}
   description={description}
 >
-  <GlassHeader client:only="react" />
+  <GlassHeader client:load />
 
   <main class="container max-w-4xl mx-auto px-4 pt-12 pb-4">
     <article class="prose prose-lg dark:prose-invert mx-auto">
@@ -122,7 +122,7 @@ const { title, description, date, updatedDate, image, tags, draft } = post.data;
   </div>
 </Layout>
 
-<Footer client:only="react" />
+<Footer client:load />
 
 <style is:global>
   .blog-content {
