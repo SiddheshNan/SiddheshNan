@@ -166,7 +166,7 @@ export const projects = [
       "Live IoT platform with ~10K users worldwide that lets people automate and control their devices over WhatsApp.",
       "Users can integrate their devices using simple APIs or client libraries, with support currently available for Raspberry Pi and Espressif boards (ESP32, ESP8266).",
       "Designed and deployed this scalable application on the AWS cloud, ensuring high availability and performance.",
-      "Technology Stack: Node.js, Go, React, MongoDB, Microservices, MQTT Protocol, and Docker",
+      "Technology Stack: Go, React, MongoDB, Microservices, MQTT Protocol, and Docker",
     ],
   },
   {

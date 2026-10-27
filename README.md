@@ -25,7 +25,7 @@
 
 | Name | What it is | Stack |
 |---|---|---|
-| [**ThingESP**](https://thingesp.siddhesh.me) | IoT platform to control ESP32 / ESP8266 / Raspberry Pi devices over WhatsApp — ~10K users. [Arduino lib](https://github.com/SiddheshNan/ThingESP-Arduino-Library) · [Python lib](https://github.com/SiddheshNan/ThingESP-Python-Library) · [JS lib](https://github.com/SiddheshNan/ThingESP-JS-Library) | Node.js, Go, React, MongoDB, MQTT, AWS |
+| [**ThingESP**](https://thingesp.siddhesh.me) | IoT platform to control ESP32 / ESP8266 / Raspberry Pi devices over WhatsApp — ~10K users. [Arduino lib](https://github.com/SiddheshNan/ThingESP-Arduino-Library) · [Python lib](https://github.com/SiddheshNan/ThingESP-Python-Library) · [JS lib](https://github.com/SiddheshNan/ThingESP-JS-Library) | Go, React, MongoDB, MQTT, AWS |
 | [**Moonshed**](https://github.com/SiddheshNan/moonshed) | A self-hostable lightweight PaaS that lets users deploy their apps from GitHub, CI, or an API — [moonshed.siddhesh.me](https://moonshed.siddhesh.me) | Go, React, Docker |
 | [**AlertZen**](https://github.com/SiddheshNan/alertzen) 🚧 | One API for apps to send notifications over WhatsApp (QR-linked or official Meta API), SMS, Telegram and push | In development |
 | [**yt-archiver**](https://github.com/SiddheshNan/yt-archiver) | Archives YouTube videos into a personal library with a web UI, plus a Chrome extension to save videos in one click | Python, React, ffmpeg, Docker |
